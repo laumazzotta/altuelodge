@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Applications/Google Chrome.app/**)",
+      "Bash(python3 -c \"import playwright\")",
+      "Bash(node -e \"console.log\\(1\\)\")",
+      "Bash(sips -Z 1400 /private/tmp/claude-501/-Users-lauramazzotta-Documents-ALQUILER-ALTUE-Web-CLAUDE/8f9fed9b-47db-43bd-ae78-16a32f415331/scratchpad/desktop-full.png --out /private/tmp/claude-501/-Users-lauramazzotta-Documents-ALQUILER-ALTUE-Web-CLAUDE/8f9fed9b-47db-43bd-ae78-16a32f415331/scratchpad/desktop-full-small.png)",
+      "Bash(sips -g pixelHeight -g pixelWidth /private/tmp/claude-501/-Users-lauramazzotta-Documents-ALQUILER-ALTUE-Web-CLAUDE/8f9fed9b-47db-43bd-ae78-16a32f415331/scratchpad/desktop-full-small.png)",
+      "Bash(python3 -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "Bash(magick -version)",
+      "Bash(find \"/Users/lauramazzotta/Documents/ALQUILER ALTUE\" -maxdepth 3 -iname \"*laura*\" -o -iname \"*juan*\" -o -iname \"*nosotros*\" -o -iname \"*anfitrion*\" -o -iname \"*owner*\" -o -iname \"*couple*\" 2>/dev/null)",
+      "Read(//Users/lauramazzotta/Documents/ALQUILER ALTUE/**)",
+      "Bash(python3 shot.py)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -sI http://localhost:8791/img/thumbs/interior-comedor.jpg)",
+      "Bash(lsof -ti:8798 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)"
+    ]
+  }
+}

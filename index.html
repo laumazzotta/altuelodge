@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altué Lodge | Departamento en alquiler — Cerro Campanario, Bariloche</title>
+<meta name="description" content="Altué Lodge: departamento de diseño en el Cerro Campanario, Bariloche. Vistas al lago Nahuel Huapi y al bosque patagónico, con energía solar propia. Reservá tu estadía.">
+<link rel="icon" type="image/png" href="img/icons/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+<!-- ICON SPRITE -->
+<svg class="icon-sprite" aria-hidden="true">
+  <defs>
+    <symbol id="icon-bed" viewBox="0 0 24 24"><path d="M2 19v-6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6"/><path d="M2 19v2M22 19v2"/><path d="M4 11V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/><path d="M12 11V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+    <symbol id="icon-bath" viewBox="0 0 24 24"><path d="M3 12h17a1 1 0 0 1 1 1v1a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-1a1 1 0 0 1 1-1Z"/><path d="M5 12V8a2 2 0 0 1 3.5-1.3"/><path d="M7 19v2M17 19v2"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M15.5 5.2a3 3 0 0 1 0 5.6"/><path d="M21 20c0-2.7-1.7-5-4-5.8"/></symbol>
+    <symbol id="icon-mountain" viewBox="0 0 24 24"><path d="M2 19h20L15 6l-3.5 5.5L9 8Z"/></symbol>
+    <symbol id="icon-tree" viewBox="0 0 24 24"><path d="M12 3 7 11h2.5L6 17h5v4h2v-4h5l-3.5-6H17Z"/></symbol>
+    <symbol id="icon-deck" viewBox="0 0 24 24"><path d="M4 21V9M20 21V9M4 9h16M4 21h16"/><path d="M8 12v9M12 12v9M16 12v9"/></symbol>
+    <symbol id="icon-chairlift" viewBox="0 0 24 24"><path d="M2 6h20M12 6v4"/><path d="M8 11h8v4H8Z"/><path d="M6 6l2 5M18 6l-2 5"/></symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24"><path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13"/><rect x="2" y="13" width="20" height="5" rx="2"/><circle cx="7" cy="18.5" r="1.5"/><circle cx="17" cy="18.5" r="1.5"/></symbol>
+    <symbol id="icon-boat" viewBox="0 0 24 24"><path d="M4 15h16l-2.2 4.4a2 2 0 0 1-1.8 1.1H8a2 2 0 0 1-1.8-1.1Z"/><path d="M6 15V9h7l2.5 6"/><path d="M11 9V4h3l-1 3"/></symbol>
+    <symbol id="icon-cheese" viewBox="0 0 24 24"><path d="M2 19 12 5l10 14Z"/><circle cx="9.5" cy="15" r=".9"/><circle cx="14.5" cy="16.3" r=".9"/><circle cx="12" cy="12.2" r=".9"/></symbol>
+    <symbol id="icon-beach" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M3 12a9 9 0 0 1 18 0Z"/><path d="M12 22c-1.8 0-3-1-3-1"/></symbol>
+    <symbol id="icon-gondola" viewBox="0 0 24 24"><path d="M2 6h20M12 6v3"/><rect x="7" y="9" width="10" height="7" rx="1.8"/><path d="M10.5 16v2M13.5 16v2"/></symbol>
+    <symbol id="icon-landmark" viewBox="0 0 24 24"><path d="M12 2v2.5M9.5 4.5h5"/><path d="M4 21V11l8-5 8 5v10"/><path d="M9 21v-6h6v6"/></symbol>
+    <symbol id="icon-beer" viewBox="0 0 24 24"><path d="M5 8h9v11a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1Z"/><path d="M14 10h2.5A1.5 1.5 0 0 1 18 11.5v3A1.5 1.5 0 0 1 16.5 16H14"/><path d="M7 8V5a2 2 0 0 1 4 0v1"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.3 2.7 3.6 5 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.2.6 3.4.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.2.2 2.3.6 3.4.1.4 0 .8-.2 1Z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-7.4 7-12.5A7 7 0 0 0 5 8.5C5 13.6 12 21 12 21Z"/><circle cx="12" cy="8.5" r="2.5"/></symbol>
+    <symbol id="icon-kitchen" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.4"/><circle cx="15.5" cy="9.5" r="1.4"/><circle cx="8.5" cy="15" r="1.4"/><circle cx="15.5" cy="15" r="1.4"/></symbol>
+    <symbol id="icon-wifi" viewBox="0 0 24 24"><path d="M2 8.5a15.3 15.3 0 0 1 20 0"/><path d="M5 12.5a10.5 10.5 0 0 1 14 0"/><path d="M8.5 16.5a6 6 0 0 1 7 0"/><path d="M12 20h.01"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#inicio" class="logo">
+      <img src="img/icons/favicon.png" alt="" class="logo-mark" width="34" height="34">
+      <span class="logo-text">Altué Lodge</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#departamento" class="nav-link">El Departamento</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <!-- <li><a href="#estaciones" class="nav-link">Estaciones</a></li> -->
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#lugares" class="nav-link">Lugares de Interés</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contacto" class="btn btn-primary btn-cta">Reservá ahora</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-media">
+      <img class="hero-slide" src="img/season-primavera.jpg" alt="Doble arcoíris sobre el bosque y el lago, visto desde el balcón" loading="eager">
+      <img class="hero-slide is-active" src="img/hero-view.jpg" alt="Vista panorámica del lago Nahuel Huapi y la cordillera andina desde el Cerro Campanario" loading="eager">
+      <img class="hero-slide" src="img/hero-cloudy.jpg" alt="Amanecer nublado sobre el lago Nahuel Huapi desde el Cerro Campanario" loading="eager">
+      <img class="hero-slide" src="img/hero-sunset.jpg" alt="Atardecer encendido sobre la cordillera visto desde Altué Lodge" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Cerro Campanario · Bariloche</p>
+      <h1 class="hero-title">Despertar entre montañas,<br>dormir entre bosques.</h1>
+      <p class="hero-subtitle">Altué Lodge: un refugio de diseño patagónico con las vistas más buscadas de Bariloche, a un paso de tu puerta.</p>
+      <a href="#contacto" class="btn btn-primary btn-lg">Reservá ahora</a>
+    </div>
+    <a href="#departamento" class="scroll-cue" aria-label="Desplazarse hacia abajo">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="departamento" class="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="img/interior-living.jpg" alt="Living comedor de Altué Lodge, con vista al bosque y balcón privado" loading="lazy">
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow">El Departamento</p>
+          <h2>Diseño patagónico,<br>confort contemporáneo</h2>
+          <p>En pleno Cerro Campanario, a metros de una de las vistas más elogiadas del mundo, Altué Lodge es el alojamiento ideal para tus vacaciones en la Patagonia Argentina. Rodeado por un bosque de cipreses, radales y maitenes, y con una vista imponente a la Laguna El Trébol y a la Cordillera, mientras en su interior conserva la calidez de los materiales patagónicos.</p>
+          <p>Pensado para desconectar sin resignar comodidad: ambientes luminosos, deck privado con acceso al bosque, y un entorno silencioso que solo interrumpe el viento entre los árboles.</p>
+
+          <ul class="features-list">
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-bed"></use></svg></span><span>2 Dormitorios</span></li>
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-bath"></use></svg></span><span>2 Baños completos</span></li>
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-users"></use></svg></span><span>4–5 Huéspedes</span></li>
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-mountain"></use></svg></span><span>Vista a la laguna y a los cerros</span></li>
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-tree"></use></svg></span><span>Entorno de bosque nativo</span></li>
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-deck"></use></svg></span><span>Deck y balcones privados</span></li>
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-kitchen"></use></svg></span><span>Cocina completamente equipada</span></li>
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-wifi"></use></svg></span><span>Wifi de alta velocidad vía Starlink y fibra</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="solar-banner reveal">
+        <div class="solar-image">
+          <img class="solar-slide is-active" src="img/facade-solar.jpg" alt="Vista aérea del techo de Altué Lodge con los paneles solares, rodeado de bosque" loading="lazy">
+          <img class="solar-slide" src="img/solar-ground.jpg" alt="Paneles solares en el techo, con el bosque y la cordillera nevada de fondo" loading="lazy">
+          <!-- <img class="solar-slide" src="img/solar-closeup.jpg" alt="Detalle de los paneles solares instalados sobre el techo de chapa" loading="lazy"> -->
+        </div>
+        <div class="solar-text">
+          <p class="eyebrow eyebrow-light">Energía sustentable</p>
+          <h3>Generación de energía propia</h3>
+          <p>La propiedad cuenta con paneles solares instalados en el techo, que garantizan generación de energía propia durante toda la estadía. Una forma de habitar la Patagonia en armonía con el entorno natural que la rodea, con mínimo impacto ambiental.</p>
+          <!-- <p>Además de contar con instalaciones de última tecnología para asegurar que nunca se corte la energía eléctrica, con autonomía </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="gallery">
+    <div class="section-inner">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Galería</p>
+        <h2>Cada rincón,<br>una vista inolvidable</h2>
+      </div>
+
+      <div class="gallery-group">
+        <h3 class="gallery-group-title reveal">Interiores</h3>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-item-hero reveal" data-index="0">
+            <img src="img/thumbs/interior-estar.jpg" alt="Sala de estar con sillones y acceso al dormitorio principal" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="1">
+            <img src="img/thumbs/interior-living.jpg" alt="Living comedor con vista al bosque y balcón privado" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="2">
+            <img src="img/thumbs/interior-cocina-full.jpg" alt="Cocina completa con mesada de mármol y equipamiento premium" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="3">
+            <img src="img/thumbs/interior-pasillo.jpg" alt="Pasillo de acceso con vista a la cocina" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="4">
+            <img src="img/thumbs/interior-dorm-principal-vanitory.jpg" alt="Dormitorio principal con vestidor y espejo circular" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="5">
+            <img src="img/thumbs/interior-dorm-principal-ventana.jpg" alt="Dormitorio principal con ventana al bosque" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="6">
+            <img src="img/thumbs/interior-bano-principal.jpg" alt="Baño principal revestido en mármol" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="7">
+            <img src="img/thumbs/interior-dorm-individual.jpg" alt="Dormitorio individual con vista al bosque" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="8">
+            <img src="img/thumbs/interior-dorm-cuchetas.jpg" alt="Dormitorio con cama individual y cuchetas" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="9">
+            <img src="img/thumbs/interior-bano-secundario-ducha.jpg" alt="Baño secundario con ducha y ventana al bosque" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="10">
+            <img src="img/thumbs/interior-bano-secundario-tocador.jpg" alt="Baño secundario con tocador y espejo ovalado" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="11">
+            <img src="img/thumbs/interior-cocina-pasillo.jpg" alt="Cocina con heladera y acceso desde el pasillo" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="12">
+            <img src="img/thumbs/interior-comedor-mesa.jpg" alt="Mesa de comedor con vista al bosque a través del ventanal" loading="lazy">
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <h3 class="gallery-group-title reveal">Exteriores</h3>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-item-hero reveal" data-index="13">
+            <img src="img/thumbs/ext-balcon-sol.jpg" alt="Balcón nevado con sol filtrándose entre los árboles" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="14">
+            <img src="img/thumbs/ext-deck-nieve-lago.jpg" alt="Deck nevado con vista al lago entre los árboles" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="15">
+            <img src="img/thumbs/ext-fachada-nieve.jpg" alt="Fachada de Altué Lodge entre los árboles nevados" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="16">
+            <img src="img/thumbs/ext-deck-deshielo.jpg" alt="Deck privado" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="17">
+            <img src="img/thumbs/deck-wood.jpg" alt="Galería de madera hacia el bosque" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="18">
+            <img src="img/thumbs/deck-view.jpg" alt="Deck privado con vista al lago" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="19">
+            <img src="img/thumbs/ext-escaleras-balcones.jpg" alt="Escaleras y balcones asomados al bosque nevado" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="20">
+            <img src="img/thumbs/ext-senda-nieve.jpg" alt="Senda nevada de acceso entre cipreses" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="21">
+            <img src="img/thumbs/exterior-02.jpg" alt="Arquitectura contemporánea con vista a la cordillera" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="22">
+            <img src="img/thumbs/exterior-04.jpg" alt="Diseño de líneas puras integrado al paisaje" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="23">
+            <img src="img/thumbs/ext-luna.jpg" alt="Luna llena sobre la cordillera nevada, con niebla en el valle" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="24">
+            <img src="img/thumbs/exterior-02.jpg" alt="Arquitectura contemporánea con vista a la cordillera" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="25">
+            <img src="img/thumbs/exterior-03.jpg" alt="Ingreso principal en piedra y madera nativa" loading="lazy">
+          </button>
+          <!-- Fotos disponibles pero no incluidas en el orden actual:
+          <button class="gallery-item reveal" data-index="x">
+            <img src="img/thumbs/hero-view.jpg" alt="Vista al lago Nahuel Huapi y la cordillera" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="x">
+            <img src="img/thumbs/exterior-01.jpg" alt="El departamento asomado entre los cipreses" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="x">
+            <img src="img/thumbs/facade-solar.jpg" alt="Vista aérea del techo con paneles solares" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="x">
+            <img src="img/thumbs/ext-arcoiris-balcon.jpg" alt="Arcoíris sobre el lago visto desde el balcón" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="x">
+            <img src="img/thumbs/ext-atardecer-lago.jpg" alt="Atardecer y reflejo de la cordillera en el lago" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="x">
+            <img src="img/thumbs/staircase-forest.jpg" alt="Senda de acceso entre coihues y cipreses" loading="lazy">
+          </button>
+          <button class="gallery-item reveal" data-index="x">
+            <img src="img/thumbs/sign-altue.jpg" alt="Cartel Altué, tu dirección en el bosque" loading="lazy">
+          </button>
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTACIONES -->
+  <section id="estaciones" class="seasons">
+    <div class="section-inner">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Las Cuatro Estaciones</p>
+        <h2>Un paisaje distinto<br>en cada visita</h2>
+        <p class="section-lead">Bariloche cambia de piel a lo largo del año. Cualquiera sea tu temporada, Altué Lodge tiene una vista distinta para regalarte.</p>
+      </div>
+
+      <div class="seasons-grid">
+        <article class="season-card reveal">
+          <div class="season-image">
+            <img src="img/season-invierno-2.jpeg" alt="Lago congelado y cordillera nevada vistos desde Altué Lodge en invierno" loading="lazy">
+          </div>
+          <div class="season-body">
+            <h3>Invierno</h3>
+            <p>Montañas nevadas y el lago en calma. La temporada de esquí en el Cerro Catedral, a minutos de casa, y las tardes de chimenea encendida.</p>
+          </div>
+        </article>
+        <article class="season-card reveal">
+          <div class="season-image">
+            <img src="img/Lupinos tronador.jpeg" alt="Doble arcoíris sobre el lago Nahuel Huapi en primavera" loading="lazy">
+          </div>
+          <div class="season-body">
+            <h3>Primavera</h3>
+            <p>El deshielo despierta al bosque nativo. Días que se alargan, arcoíris después de la lluvia y el aire lleno de aroma a ciprés.</p>
+          </div>
+        </article>
+        <article class="season-card reveal">
+          <div class="season-image">
+            <img src="img/playa-verano.jpeg" alt="Cielo despejado y lago Nahuel Huapi en un día de verano" loading="lazy">
+          </div>
+          <div class="season-body">
+            <h3>Verano</h3>
+            <p>Días largos y cielo despejado. El lago en su mejor versión para navegar, salir de trekking o simplemente desconectar.</p>
+          </div>
+        </article>
+        <article class="season-card reveal">
+          <div class="season-image">
+            <img src="img/season-otono.jpg" alt="Bosque con colores dorados y rojizos en otoño, con el lago de fondo" loading="lazy">
+          </div>
+          <div class="season-body">
+            <h3>Otoño</h3>
+            <p>El bosque se tiñe de dorados y rojizos: la luz más fotogénica del año, con el Circuito Chico en su máximo esplendor.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="nosotros" class="hosts">
+    <div class="section-inner hosts-grid">
+      <div class="hosts-image reveal">
+        <img src="img/laura-juan.jpg" alt="Laura y Juan, anfitriones y propietarios de Altué Lodge, en la cima del Cerro Campanario" loading="lazy">
+      </div>
+      <div class="hosts-text reveal">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2>Laura y Juan,<br>tus anfitriones en la montaña</h2>
+        <p>Somos Laura y Juan, los propietarios de Altué Lodge. Diseñamos y construimos este refugio en el Cerro Campanario con una idea simple: compartir el rincón de Bariloche que más amamos, con esa vista al lago que a nosotros tampoco deja de sorprendernos.</p>
+        <p>Nos vas a encontrar siempre disponibles antes y durante tu estadía, para recomendarte el mejor circuito, la cervecería que no te podés perder o el mejor lugar para ver el atardecer. Conocemos cada rincón de estas montañas y nos encanta compartirlo.</p>
+
+        <ul class="hosts-features">
+          <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-mountain"></use></svg></span><span>Anfitriones locales, expertos en la zona</span></li>
+          <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-users"></use></svg></span><span>Atención personalizada, de principio a fin</span></li>
+          <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-phone"></use></svg></span><span>Siempre disponibles por WhatsApp</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUGARES DE INTERÉS -->
+  <section id="lugares" class="places">
+    <div class="section-inner">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Lugares de Interés</p>
+        <h2>Todo Bariloche,<br>a un paso de tu puerta</h2>
+        <p class="section-lead">Altué Lodge se encuentra sobre el mítico Circuito Chico, rodeado de los paisajes más fotografiados de la Patagonia argentina.</p>
+      </div>
+
+      <div class="places-grid">
+        <article class="place-card reveal">
+          <svg class="place-icon" aria-hidden="true"><use href="#icon-chairlift"></use></svg>
+          <h3>Cerro Campanario</h3>
+          <p class="place-distance">A pasos del depto.</p>
+          <p>La aerosilla hacia el mirador con una de las vistas más elogiadas del mundo, a metros de la puerta de casa.</p>
+        </article>
+        <article class="place-card reveal">
+          <svg class="place-icon" aria-hidden="true"><use href="#icon-car"></use></svg>
+          <h3>Circuito Chico</h3>
+          <p class="place-distance">5 min en auto</p>
+          <p>El recorrido escénico más famoso de Bariloche, entre lagos, bosques y miradores infinitos.</p>
+        </article>
+        <article class="place-card reveal">
+          <svg class="place-icon" aria-hidden="true"><use href="#icon-boat"></use></svg>
+          <h3>Puerto Pañuelo</h3>
+          <p class="place-distance">8 min en auto</p>
+          <p>Punto de partida de las excursiones náuticas a Isla Victoria y el Bosque de Arrayanes.</p>
+        </article>
+        <article class="place-card reveal">
+          <svg class="place-icon" aria-hidden="true"><use href="#icon-cheese"></use></svg>
+          <h3>Colonia Suiza</h3>
+          <p class="place-distance">10 min en auto</p>
+          <p>Feria de artesanos, curanto patagónico al desnivel y aire de pueblo alpino.</p>
+        </article>
+        <article class="place-card reveal">
+          <svg class="place-icon" aria-hidden="true"><use href="#icon-beach"></use></svg>
+          <h3>Playa Bonita</h3>
+          <p class="place-distance">8 min en auto</p>
+          <p>Una de las postales más clásicas del lago Nahuel Huapi, ideal para el atardecer.</p>
+        </article>
+        <article class="place-card reveal">
+          <svg class="place-icon" aria-hidden="true"><use href="#icon-gondola"></use></svg>
+          <h3>Cerro Otto</h3>
+          <p class="place-distance">20 min en auto</p>
+          <p>Teleférico y bar giratorio con vistas de 360° sobre la ciudad y el lago.</p>
+        </article>
+        <article class="place-card reveal">
+          <svg class="place-icon" aria-hidden="true"><use href="#icon-landmark"></use></svg>
+          <h3>Centro Cívico</h3>
+          <p class="place-distance">20 min en auto</p>
+          <p>El corazón histórico de la ciudad, chocolaterías y la Catedral Nuestra Señora del Nahuel Huapi.</p>
+        </article>
+        <article class="place-card reveal">
+          <svg class="place-icon" aria-hidden="true"><use href="#icon-beer"></use></svg>
+          <h3>Ruta de la Cerveza</h3>
+          <p class="place-distance">10–15 min en auto</p>
+          <p>Cervecerías artesanales patagónicas repartidas entre el Cerro Campanario y el centro.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact">
+    <div class="section-inner">
+      <div class="section-heading reveal">
+        <p class="eyebrow eyebrow-light">Contacto</p>
+        <h2>Reservá tu estadía<br>en Altué Lodge</h2>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com">
+          </div>
+          <div class="form-row">
+            <label for="fechas">Fechas estimadas / Cantidad de huéspedes</label>
+            <input type="text" id="fechas" name="fechas" placeholder="Ej: 15 al 20 de agosto, 4 personas">
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Contanos un poco más sobre tu estadía"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-whatsapp">
+            <svg class="icon-line wa-icon" aria-hidden="true"><use href="#icon-phone"></use></svg> Enviar por WhatsApp
+          </button>
+          <p class="form-hint">Al enviar, se abrirá WhatsApp con tu mensaje ya redactado.</p>
+        </form>
+
+        <div class="contact-info reveal">
+          <div class="info-card">
+            <h3>Escribinos</h3>
+            <a class="info-link" href="https://wa.me/5491124005587" target="_blank" rel="noopener">
+              <svg class="icon-line info-icon" aria-hidden="true"><use href="#icon-phone"></use></svg> +54 9 11 2400-5587
+            </a>
+            <a class="info-link" href="mailto:lau.mazzotta@gmail.com">
+              <svg class="icon-line info-icon" aria-hidden="true"><use href="#icon-mail"></use></svg> lau.mazzotta@gmail.com
+            </a>
+            <a class="info-link" href="https://www.google.com/maps/search/?api=1&query=Cerro+Campanario+Bariloche" target="_blank" rel="noopener">
+              <svg class="icon-line info-icon" aria-hidden="true"><use href="#icon-pin"></use></svg> Cerro Campanario, Bariloche
+            </a>
+          </div>
+          <div class="info-quote">
+            <p>“El mejor punto de partida para conocer todo lo que hace de Bariloche un lugar único.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <a href="#inicio" class="logo footer-logo">
+        <img src="img/icons/favicon.png" alt="" class="logo-mark" width="30" height="30">
+        <span class="logo-text">Altué Lodge</span>
+      </a>
+      <p>Refugio de diseño en el Cerro Campanario, Bariloche.</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://instagram.com/campanariolodge" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://wa.me/5491124005587" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Altué Lodge. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+  <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">&#10094;</button>
+  <figure class="lightbox-figure">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+  <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">&#10095;</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
