@@ -566,7 +566,7 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
 /* ---------- Seasons ---------- */
 .seasons { padding: 120px 0; background: var(--off-white); }
 .seasons .section-heading { text-align: center; margin-left: auto; margin-right: auto; }
-.seasons .section-lead { margin-left: auto; margin-right: auto; text-align: center; }
+.seasons .section-lead { margin-left: auto; margin-right: auto; text-align: center; color: var(--text-muted); }
 
 .seasons-grid {
   display: grid;
@@ -581,14 +581,24 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .season-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-strong); }
-.season-image { overflow: hidden; aspect-ratio: 3 / 4; }
+.season-image { position: relative; overflow: hidden; aspect-ratio: 3 / 4; }
 .season-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.8s var(--transition);
+  filter: saturate(0.68) contrast(0.94) brightness(0.97) sepia(0.1);
+  transition: transform 0.8s var(--transition), filter 0.8s var(--transition);
 }
-.season-card:hover .season-image img { transform: scale(1.06); }
+.season-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--forest-900);
+  opacity: 0.12;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.season-card:hover .season-image img { filter: none; transform: scale(1.06); }
 .season-body { padding: 22px 20px 26px; }
 .season-body h3 { font-size: 1.15rem; margin-bottom: 8px; }
 .season-body p { font-size: 0.88rem; margin-bottom: 0; }
