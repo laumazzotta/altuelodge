@@ -587,7 +587,7 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   height: 100%;
   object-fit: cover;
   filter: saturate(0.68) contrast(0.94) brightness(0.97) sepia(0.1);
-  transition: transform 0.8s var(--transition), filter 0.8s var(--transition);
+  transition: transform 0.8s var(--transition), filter 0.3s ease;
 }
 .season-image::after {
   content: "";
