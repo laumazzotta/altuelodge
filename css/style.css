@@ -402,8 +402,8 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
 }
 .feature-icon .icon-line { width: 1.05rem; height: 1.05rem; stroke-width: 1.7; }
 
+.energy { padding: 120px 0; background: var(--beige-300); }
 .solar-banner {
-  margin-top: 110px;
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   align-items: center;
@@ -444,6 +444,34 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   font-size: clamp(1.5rem, 2.4vw, 2.1rem);
 }
 .solar-text p { color: var(--text-on-dark-muted); margin-bottom: 0; }
+
+/* ---------- Ubicación / Mapa ---------- */
+.location { padding: 120px 0; background: var(--beige-100); }
+.location .section-heading { text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 44px; }
+.location .section-lead { margin-left: auto; margin-right: auto; text-align: center; color: var(--text-muted); }
+.location-map {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  aspect-ratio: 1400 / 740;
+  background: var(--beige-100);
+  cursor: pointer;
+  transition: box-shadow var(--transition);
+}
+.location-map:hover { box-shadow: var(--shadow-strong); }
+.location-map:hover img { transform: scale(1.03); }
+.location-map img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.6s var(--transition);
+}
 
 /* ---------- Places ---------- */
 .places { padding: 120px 0; background: var(--forest-800); position: relative; }
@@ -893,8 +921,7 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
 @media (max-width: 700px) {
   .section-inner { padding: 0 22px; }
   .about { padding: 96px 0 70px; }
-  .places, .gallery, .contact, .seasons, .hosts { padding: 80px 0; }
-  .solar-banner { margin-top: 70px; }
+  .places, .gallery, .contact, .seasons, .hosts, .location, .energy { padding: 80px 0; }
   .solar-text { padding: 36px 28px; }
   .places-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
   .seasons-grid { grid-template-columns: 1fr 1fr; gap: 14px; }

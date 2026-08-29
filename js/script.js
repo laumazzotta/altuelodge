@@ -99,8 +99,10 @@
     { src: "img/exterior-04.jpg", caption: "Diseño integrado al paisaje" },
     { src: "img/ext-luna.jpg", caption: "Luna llena sobre la cordillera nevada" },
     { src: "img/exterior-02.jpg", caption: "Arquitectura contemporánea con vista a la cordillera" },
-    { src: "img/exterior-03.jpg", caption: "Ingreso principal en piedra y madera nativa" }
+    { src: "img/exterior-03.jpg", caption: "Ingreso principal en piedra y madera nativa" },
+    { src: "img/mapa-ubicacion.svg", caption: "Mapa del barrio con la ubicación aproximada de Altué Lodge" }
   ];
+  var LOCATION_MAP_INDEX = gallery.length - 1;
 
   var lightbox = document.getElementById("lightbox");
   var lightboxImg = document.getElementById("lightboxImg");
@@ -139,6 +141,13 @@
       openLightbox(parseInt(item.getAttribute("data-index"), 10));
     });
   });
+
+  var locationMapTrigger = document.getElementById("locationMapTrigger");
+  if (locationMapTrigger) {
+    locationMapTrigger.addEventListener("click", function () {
+      openLightbox(LOCATION_MAP_INDEX);
+    });
+  }
 
   lightboxClose.addEventListener("click", closeLightbox);
   lightboxPrev.addEventListener("click", function () { showImage(currentIndex - 1); });
