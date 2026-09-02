@@ -254,9 +254,13 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   overflow: hidden;
 }
 .hero-media {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+  position: fixed;
+  top: -12%;
+  left: 0;
+  right: 0;
+  height: 124%;
+  z-index: -1;
+  will-change: transform;
 }
 .hero-slide {
   position: absolute;
@@ -649,6 +653,7 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   height: 100%;
   object-fit: cover;
   aspect-ratio: 4 / 5;
+  filter: saturate(0.85);
   transition: transform 0.8s var(--transition);
 }
 .hosts-image:hover img { transform: scale(1.05); }

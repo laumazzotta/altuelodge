@@ -25,6 +25,33 @@
   initSlideshow(".hero-slide", 5000);
   initSlideshow(".solar-slide", 5000);
 
+  /* ---------- Parallax del fondo del hero ---------- */
+  var heroSection = document.querySelector(".hero");
+  var heroMedia = document.querySelector(".hero-media");
+  if (heroSection && heroMedia && !reduceMotion) {
+    var parallaxTicking = false;
+    var PARALLAX_FACTOR = 0.1;
+
+    function updateParallax() {
+      parallaxTicking = false;
+      var rect = heroSection.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+      var offset = rect.top * PARALLAX_FACTOR;
+      heroMedia.style.transform = "translate3d(0, " + offset + "px, 0)";
+    }
+
+    function onParallaxScroll() {
+      if (!parallaxTicking) {
+        parallaxTicking = true;
+        requestAnimationFrame(updateParallax);
+      }
+    }
+
+    updateParallax();
+    window.addEventListener("scroll", onParallaxScroll, { passive: true });
+    window.addEventListener("resize", onParallaxScroll);
+  }
+
   /* ---------- Header sticky ---------- */
   var header = document.getElementById("siteHeader");
   function onScroll() {
