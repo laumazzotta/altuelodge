@@ -179,13 +179,14 @@
         alt2: "Panoramic view of Lake Nahuel Huapi and the Andes mountain range from Cerro Campanario",
         alt3: "Cloudy sunrise over Lake Nahuel Huapi from Cerro Campanario",
         alt4: "Fiery sunset over the mountain range seen from Altué Lodge",
-        title: "Wake up among mountains,<br>fall asleep among forests.",
+        // title: "Wake up among mountains,<br>fall asleep among forests.",
+        title: "The best of Patagonia,<br> just outside your window",
         subtitle: "Altué Lodge: a Patagonian design retreat with Bariloche's most sought-after views, just steps from your door.",
         scrollAria: "Scroll down"
       },
       about: {
         eyebrow: "The Apartment",
-        title: "Your refuge in<br>Patagonia",
+        title: "Your refuge in<br>Bariloche",
         p1: "Right on Cerro Campanario, just steps from one of the most celebrated views in the world, Altué Lodge is the ideal place to stay for your vacation in Argentine Patagonia. Surrounded by a forest of cypress, radal and maiten trees, with a stunning view of Laguna El Trébol and the mountain range, while inside it keeps the warmth of Patagonian materials.",
         p2: "Designed to help you disconnect without giving up comfort: bright rooms, a private deck with access to the forest, and a quiet setting broken only by the wind moving through the trees.",
         feature1: "2 Bedrooms",
@@ -465,6 +466,51 @@
     revealEls.forEach(function (el) { observer.observe(el); });
   } else {
     revealEls.forEach(function (el) { el.classList.add("visible"); });
+  }
+
+  /* ---------- Paneles fijos al hacer scroll (GSAP ScrollTrigger) ---------- */
+  if (window.gsap && window.ScrollTrigger && !reduceMotion) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".pin-panel").forEach(function (panel) {
+      var innerPanel = panel.querySelector(".section-inner") || panel;
+
+      var panelHeight = innerPanel.offsetHeight;
+      var windowHeight = window.innerHeight;
+      var difference = panelHeight - windowHeight;
+
+      // proporción (0 a 1) de la animación total dedicada al "scroll falso"
+      // del contenido interno, para paneles más altos que la pantalla
+      var fakeScrollRatio = difference > 0 ? difference / (difference + windowHeight) : 0;
+
+      if (fakeScrollRatio) {
+        panel.style.marginBottom = panelHeight * fakeScrollRatio + "px";
+      }
+
+      var tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: panel,
+          start: "bottom bottom",
+          end: function () {
+            return fakeScrollRatio ? "+=" + innerPanel.offsetHeight : "bottom top";
+          },
+          pinSpacing: false,
+          pin: true,
+          scrub: true
+        }
+      });
+
+      if (fakeScrollRatio) {
+        tl.to(innerPanel, {
+          yPercent: -100,
+          y: windowHeight,
+          duration: 1 / (1 - fakeScrollRatio) - 1,
+          ease: "none"
+        });
+      }
+      tl.fromTo(panel, { scale: 1, opacity: 1 }, { scale: 0.7, opacity: 0.5, duration: 0.9 })
+        .to(panel, { opacity: 0, duration: 0.1 });
+    });
   }
 
   /* ---------- Galería + Lightbox ---------- */

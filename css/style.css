@@ -381,6 +381,14 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 .hero-content.reveal { opacity: 1; transform: none; }
 
+/* ---------- Paneles fijos al hacer scroll (GSAP ScrollTrigger) ---------- */
+.pin-panel {
+  position: relative;
+  height: 100svh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
 /* ---------- About ---------- */
 .about { padding: 130px 0 100px; background: var(--off-white); }
 .about-grid {
@@ -988,4 +996,5 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   .reveal { opacity: 1; transform: none; }
   .hero-slide, .solar-slide { opacity: 0; transform: none; }
   .hero-slide.is-active, .solar-slide.is-active { opacity: 1; }
+  .pin-panel { height: auto; overflow: visible; }
 }
