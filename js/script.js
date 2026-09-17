@@ -36,7 +36,7 @@
         title: "Tu refugio en la<br>Patagonia",
         p1: "En pleno Cerro Campanario, a metros de una de las vistas más elogiadas del mundo, Altué Lodge es el alojamiento ideal para tus vacaciones en la Patagonia Argentina. Rodeado por un bosque de cipreses, radales y maitenes, y con una vista imponente a la Laguna El Trébol y a la Cordillera, mientras en su interior conserva la calidez de los materiales patagónicos.",
         p2: "Pensado para desconectar sin resignar comodidad: ambientes luminosos, deck privado con acceso al bosque, y un entorno silencioso que solo interrumpe el viento entre los árboles.",
-        feature1: "2 Dormitorios",
+        feature1: "2 Dormitorios con TV",
         feature2: "2 Baños completos",
         feature3: "4–5 Huéspedes",
         feature4: "Vista a la laguna y a los cerros",
@@ -51,7 +51,7 @@
         title: "Espacios para<br>sentirte bien",
         interiorTitle: "Interiores",
         exteriorTitle: "Exteriores",
-        alt0: "Sala de estar con sillones y acceso al dormitorio principal",
+        alt0: "Sala de estar con acceso al dormitorio principal",
         alt1: "Living comedor con vista al bosque y balcón privado",
         alt2: "Cocina completa con mesada de mármol y equipamiento premium",
         alt3: "Pasillo de acceso con vista a la cocina",
@@ -89,7 +89,7 @@
         alt2: "Paneles solares en el techo, con el bosque y la cordillera nevada de fondo",
         eyebrow: "Energía sustentable",
         title: "Generación de energía propia",
-        text: "La propiedad cuenta con paneles solares instalados en el techo, que garantizan generación de energía propia durante toda la estadía. Una forma de habitar la Patagonia en armonía con el entorno natural que la rodea, con mínimo impacto ambiental."
+        text: "Contamos con paneles solares instalados en el techo, que garantizan generación de energía propia durante toda la estadía. Una forma de habitar la Patagonia en armonía con el entorno natural que la rodea, con mínimo impacto ambiental."
       },
       seasons: {
         eyebrow: "Las Cuatro Estaciones",
@@ -125,7 +125,7 @@
         p1: { distance: "A pasos del depto.", text: "La aerosilla hacia el mirador con una de las vistas más elogiadas del mundo, a metros de la puerta de casa." },
         p2: { distance: "5 min en auto", text: "El recorrido escénico más famoso de Bariloche, entre lagos, bosques y miradores infinitos." },
         p3: { distance: "8 min en auto", text: "Punto de partida de las excursiones náuticas a Isla Victoria y el Bosque de Arrayanes." },
-        p4: { distance: "10 min en auto", text: "Feria de artesanos, curanto patagónico al desnivel y aire de pueblo alpino." },
+        p4: { distance: "10 min en auto", text: "Feria de artesanos, curanto patagónico y aire de pueblo alpino." },
         p5: { distance: "8 min en auto", text: "Una de las postales más clásicas del lago Nahuel Huapi, ideal para el atardecer." },
         p6: { distance: "20 min en auto", text: "Teleférico y bar giratorio con vistas de 360° sobre la ciudad y el lago." },
         p7: { distance: "20 min en auto", text: "El corazón histórico de la ciudad, chocolaterías y la Catedral Nuestra Señora del Nahuel Huapi." },
