@@ -111,7 +111,7 @@
           <p data-i18n="about.p2">Pensado para desconectar sin resignar comodidad: ambientes luminosos, deck privado con acceso al bosque, y un entorno silencioso que solo interrumpe el viento entre los árboles.</p>
 
           <ul class="features-list">
-            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-bed"></use></svg></span><span data-i18n="about.feature1">2 Dormitorios</span></li>
+            <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-bed"></use></svg></span><span data-i18n="about.feature1">2 Dormitorios con TV</span></li>
             <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-bath"></use></svg></span><span data-i18n="about.feature2">2 Baños completos</span></li>
             <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-users"></use></svg></span><span data-i18n="about.feature3">4–5 Huéspedes</span></li>
             <li><span class="feature-icon" aria-hidden="true"><svg class="icon-line"><use href="#icon-mountain"></use></svg></span><span data-i18n="about.feature4">Vista a la laguna y a los cerros</span></li>
@@ -275,7 +275,7 @@
         <div class="solar-text">
           <p class="eyebrow eyebrow-light" data-i18n="energy.eyebrow">Energía sustentable</p>
           <h3 data-i18n="energy.title">Generación de energía propia</h3>
-          <p data-i18n="energy.text">La propiedad cuenta con paneles solares instalados en el techo, que garantizan generación de energía propia durante toda la estadía. Una forma de habitar la Patagonia en armonía con el entorno natural que la rodea, con mínimo impacto ambiental.</p>
+          <p data-i18n="energy.text">Contamos con paneles solares instalados en el techo, que garantizan generación de energía propia durante toda la estadía. Una forma de habitar la Patagonia en armonía con el entorno natural que la rodea, con mínimo impacto ambiental.</p>
           <!-- <p>Además de contar con instalaciones de última tecnología para asegurar que nunca se corte la energía eléctrica, con autonomía </p> -->
         </div>
       </div>
@@ -495,10 +495,17 @@
   <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar" data-i18n-attr-aria-label="lightbox.closeAria">&times;</button>
   <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior" data-i18n-attr-aria-label="lightbox.prevAria">&#10094;</button>
   <figure class="lightbox-figure">
-    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-img-wrap" id="lightboxImgWrap">
+      <img id="lightboxImg" src="" alt="">
+    </div>
     <figcaption id="lightboxCaption"></figcaption>
   </figure>
   <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Imagen siguiente" data-i18n-attr-aria-label="lightbox.nextAria">&#10095;</button>
+  <div class="lightbox-zoom-controls" id="lightboxZoomControls" hidden>
+    <button type="button" class="lightbox-zoom-btn" id="lightboxZoomOut" aria-label="Alejar" data-i18n-attr-aria-label="lightbox.zoomOutAria">&#8722;</button>
+    <button type="button" class="lightbox-zoom-btn lightbox-zoom-reset" id="lightboxZoomReset" aria-label="Restablecer zoom" data-i18n-attr-aria-label="lightbox.zoomResetAria">100%</button>
+    <button type="button" class="lightbox-zoom-btn" id="lightboxZoomIn" aria-label="Acercar" data-i18n-attr-aria-label="lightbox.zoomInAria">&#43;</button>
+  </div>
 </div>
 
 <script src="js/script.js"></script>

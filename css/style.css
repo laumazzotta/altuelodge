@@ -858,6 +858,25 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .lightbox.open .lightbox-figure img { opacity: 1; transform: scale(1); }
+.lightbox-img-wrap {
+  max-width: 88vw;
+  max-height: 78vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+}
+.lightbox-img-wrap.is-zoomable img {
+  cursor: zoom-in;
+  transition: opacity 0.3s ease;
+}
+.lightbox-img-wrap.is-zoomed img {
+  cursor: grab;
+}
+.lightbox-img-wrap.is-panning img {
+  cursor: grabbing;
+}
 .lightbox-figure figcaption {
   color: var(--beige-300);
   font-size: 0.92rem;
@@ -895,6 +914,40 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
 .lightbox-arrow:hover { transform: translateY(-50%) scale(1.08); }
 .lightbox-prev { left: 24px; }
 .lightbox-next { right: 24px; }
+
+.lightbox-zoom-controls {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(243, 236, 223, 0.08);
+  border: 1px solid rgba(243, 236, 223, 0.2);
+  border-radius: 999px;
+  padding: 6px;
+}
+.lightbox-zoom-controls[hidden] { display: none; }
+.lightbox-zoom-btn {
+  background: transparent;
+  border: none;
+  color: var(--beige-100);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.lightbox-zoom-btn:hover { background: rgba(243, 236, 223, 0.18); }
+.lightbox-zoom-reset {
+  width: auto;
+  padding: 0 14px;
+  font-size: 0.78rem;
+  border-radius: 999px;
+}
 
 /* ============================================================
    Responsive
@@ -970,6 +1023,8 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   .lightbox-prev { left: 10px; }
   .lightbox-next { right: 10px; }
   .lightbox-close { top: 14px; right: 14px; width: 38px; height: 38px; }
+  .lightbox-zoom-controls { bottom: 14px; }
+  .lightbox-zoom-btn { width: 34px; height: 34px; font-size: 1rem; }
 }
 
 @media (max-width: 480px) {
