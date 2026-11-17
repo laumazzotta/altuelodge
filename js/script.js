@@ -34,7 +34,8 @@
       apts: {
         eyebrow: "Los Departamentos",
         title: "Tu refugio<br>en la Patagonia",
-        lead: "En pleno Cerro Campanario, a metros de una de las vistas más elogiadas del mundo, Altué Lodge es el alojamiento ideal para tus vacaciones en Bariloche. Rodeado por bosque nativo, y con imponentes vistas a la Laguna El Trébol y a la Cordillera, es el lugar donde el único ruido es el viento entre los árboles. Disponemos de dos departamentos con entrada independiente, conectados por escaleras. Elegí el que mejor se adapte a tu viaje, o reservá los dos para venir en grupo.",
+        lead: "En pleno Cerro Campanario, a metros de una de las vistas más elogiadas del mundo, Altué Lodge es el alojamiento ideal para tus vacaciones en Bariloche. Rodeado por bosque nativo, y con imponentes vistas a la Laguna El Trébol y a la Cordillera, es el lugar donde el único ruido es el viento entre los árboles.",
+        lead2: "Disponemos de dos departamentos con entrada independiente, conectados por escaleras. Elegí el que mejor se adapte a tu viaje, o reservá los dos para venir en grupo.",
         cta: "Ver departamento",
         cipresImgAlt: "Sala de estar del Depto. Ciprés, con sillones y balcón privado",
         cipresCapacity: "4–5 huéspedes",
@@ -53,10 +54,10 @@
       },
       cipres: {
         eyebrow: "Depto. Ciprés",
-        title: "Tu refugio para<br>desconectar",
+        title: "Un refugio para<br>desconectar",
         p1: "El departamento Ciprés está pensado para quienes buscan calma: ambientes luminosos y cálidos, con dos dormitorios, dos baños completos y un living comedor con cocina equipada.",
         p2: "Afuera, un deck y balcones privados asomados a la laguna y los cerros, con acceso directo al bosque. Tiene entrada independiente y se conecta con el departamento Lenga mediante escaleras.",
-        feature1: "2 Dormitorios con TV",
+        feature1: "2 Dormitorios con TV, placard y escritorio",
         feature2: "2 Baños completos",
         feature3: "4–5 Huéspedes",
         feature4: "Vista a la laguna y a los cerros",
@@ -263,7 +264,8 @@
       apts: {
         eyebrow: "The Apartments",
         title: "Your refuge<br>in Patagonia",
-        lead: "Right on Cerro Campanario, just steps from one of the most celebrated views in the world, Altué Lodge is the ideal place to stay for your vacation in Bariloche. Surrounded by native forest, with stunning views of Laguna El Trébol and the mountain range, it's a place where the only sound is the wind moving through the trees. We offer two apartments, each with its own private entrance, connected by stairs. Choose the one that best fits your trip, or book both to come as a group.",
+        lead: "Right on Cerro Campanario, just steps from one of the most celebrated views in the world, Altué Lodge is the ideal place to stay for your vacation in Bariloche. Surrounded by native forest, with stunning views of Laguna El Trébol and the mountain range, it's a place where the only sound is the wind moving through the trees.",
+        lead2: "We offer two apartments, each with its own private entrance, connected by stairs. Choose the one that best fits your trip, or book both to come as a group.",
         cta: "View apartment",
         cipresImgAlt: "Living room of the Ciprés Apartment, with armchairs and a private balcony",
         cipresCapacity: "4–5 guests",
@@ -282,7 +284,7 @@
       },
       cipres: {
         eyebrow: "Ciprés Apartment",
-        title: "Your refuge<br>to unwind",
+        title: "A refuge<br>to unwind",
         p1: "The Ciprés Apartment is designed for those seeking calm: bright, warm rooms with two bedrooms, two full bathrooms and a living-dining room with an equipped kitchen.",
         p2: "Outside, a private deck and balconies overlook the lagoon and the mountains, with direct access to the forest. It has its own private entrance and connects to the Lenga Apartment by stairs.",
         feature1: "2 Bedrooms with TV",
@@ -503,6 +505,16 @@
       if (val !== null) el.setAttribute("content", val);
     });
 
+    /* Mapa de ubicación: versión según idioma (desktop y mobile) */
+    document.querySelectorAll("[data-map-src-" + lang + "]").forEach(function (el) {
+      var src = el.getAttribute("data-map-src-" + lang);
+      if (el.tagName === "SOURCE") {
+        if (el.getAttribute("srcset") !== src) el.setAttribute("srcset", src);
+      } else if (el.getAttribute("src") !== src) {
+        el.setAttribute("src", src);
+      }
+    });
+
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
       btn.classList.toggle("is-active", btn.getAttribute("data-lang") === lang);
     });
@@ -665,9 +677,15 @@
       { src: "img/exterior-03.jpg", es: "Ingreso principal en piedra y madera nativa", en: "Main entrance in stone and native wood" }
     ],
     mapa: [
-      { src: "img/mapa-ubicacion.svg", es: "Mapa del barrio con la ubicación aproximada de Altué Lodge", en: "Neighborhood map with Altué Lodge's approximate location" }
+      { src: mapLightboxSrc, es: "Mapa del barrio con la ubicación aproximada de Altué Lodge", en: "Neighborhood map with Altué Lodge's approximate location" }
     ]
   };
+  /* Mapa en pantalla completa: vertical en mobile, y versión EN si corresponde */
+  function mapLightboxSrc() {
+    var mobile = window.matchMedia("(max-width: 700px)").matches;
+    var suffix = (mobile ? "-mobile" : "") + (currentLang === "en" ? "-en" : "");
+    return "img/mapa-ubicacion" + suffix + ".svg";
+  }
   var currentGroup = "cipres";
   var MAP_GROUP = "mapa";
 
@@ -863,7 +881,7 @@
     currentIndex = (index + items.length) % items.length;
     var item = items[currentIndex];
     var caption = item[currentLang] || item.es;
-    lightboxImg.src = item.src;
+    lightboxImg.src = typeof item.src === "function" ? item.src() : item.src;
     lightboxImg.alt = caption;
     lightboxCaption.textContent = caption;
     var single = items.length < 2;
