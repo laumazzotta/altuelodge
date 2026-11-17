@@ -7,13 +7,12 @@
   var I18N = {
     es: {
       meta: {
-        title: "Altué Lodge | Departamento en alquiler — Cerro Campanario, Bariloche",
-        description: "Altué Lodge: departamento de diseño en el Cerro Campanario, Bariloche. Vistas al lago Nahuel Huapi y al bosque patagónico, con energía solar propia. Reservá tu estadía."
+        title: "Altué Lodge | Departamentos en alquiler — Cerro Campanario, Bariloche",
+        description: "Altué Lodge: dos departamentos de diseño en el Cerro Campanario, Bariloche. Vistas al lago Nahuel Huapi y al bosque patagónico, con energía solar propia. Reservá tu estadía."
       },
       skip: { link: "Saltar al contenido" },
       nav: {
-        inicio: "Inicio",
-        departamento: "El Departamento",
+        departamentos: "Departamentos",
         galeria: "Galería",
         ubicacion: "Ubicación",
         nosotros: "Nosotros",
@@ -28,29 +27,97 @@
         alt3: "Amanecer nublado sobre el lago Nahuel Huapi desde el Cerro Campanario",
         alt4: "Atardecer encendido sobre la cordillera visto desde Altué Lodge",
         title: "Despertar entre montañas,<br>dormir entre bosques.",
-        subtitle: "Altué Lodge: un refugio de diseño patagónico con las vistas más buscadas de Bariloche, a un paso de tu puerta.",
+        subtitle: "Altué Lodge: departamentos de diseño patagónico con las vistas más buscadas de Bariloche, a un paso de tu puerta.",
+        cta: "Conocé los departamentos",
         scrollAria: "Desplazarse hacia abajo"
       },
-      about: {
-        eyebrow: "El Departamento",
-        title: "Tu refugio en la<br>Patagonia",
-        p1: "En pleno Cerro Campanario, a metros de una de las vistas más elogiadas del mundo, Altué Lodge es el alojamiento ideal para tus vacaciones en la Patagonia Argentina. Rodeado por un bosque de cipreses, radales y maitenes, y con una vista imponente a la Laguna El Trébol y a la Cordillera, mientras en su interior conserva la calidez de los materiales patagónicos.",
-        p2: "Pensado para desconectar sin resignar comodidad: ambientes luminosos, deck privado con acceso al bosque, y un entorno silencioso que solo interrumpe el viento entre los árboles.",
+      apts: {
+        eyebrow: "Los Departamentos",
+        title: "Tu refugio<br>en la Patagonia",
+        lead: "En pleno Cerro Campanario, a metros de una de las vistas más elogiadas del mundo, Altué Lodge es el alojamiento ideal para tus vacaciones en Bariloche. Rodeado por bosque nativo, y con imponentes vistas a la Laguna El Trébol y a la Cordillera, es el lugar donde el único ruido es el viento entre los árboles. Disponemos de dos departamentos con entrada independiente, conectados por escaleras. Elegí el que mejor se adapte a tu viaje, o reservá los dos para venir en grupo.",
+        cta: "Ver departamento",
+        cipresImgAlt: "Sala de estar del Depto. Ciprés, con sillones y balcón privado",
+        cipresCapacity: "4–5 huéspedes",
+        cipresName: "Depto. Ciprés",
+        cipresText: "Ambientes luminosos, balcones privados con vista a la Laguna El Trébol y a la cordillera, rodeado de bosque nativo.",
+        cipresF1: "2 dormitorios",
+        cipresF2: "2 baños",
+        cipresF3: "Deck y balcones",
+        lengaImgAlt: "Dormitorio matrimonial del Depto. Lenga, con respaldo de madera y escritorio junto a la ventana",
+        lengaCapacity: "Hasta 7 huéspedes",
+        lengaName: "Depto. Lenga",
+        lengaText: "Un salón amplio para compartir, con parrilla y mesa de ping pong, y un gran deck con vistas panorámicas y bajada directa al bosque.",
+        lengaF1: "2 dormitorios",
+        lengaF2: "1 baño",
+        lengaF3: "Parrilla y ping pong"
+      },
+      cipres: {
+        eyebrow: "Depto. Ciprés",
+        title: "Tu refugio para<br>desconectar",
+        p1: "El departamento Ciprés está pensado para quienes buscan calma: ambientes luminosos y cálidos, con dos dormitorios, dos baños completos y un living comedor con cocina equipada.",
+        p2: "Afuera, un deck y balcones privados asomados a la laguna y los cerros, con acceso directo al bosque. Tiene entrada independiente y se conecta con el departamento Lenga mediante escaleras.",
         feature1: "2 Dormitorios con TV",
         feature2: "2 Baños completos",
         feature3: "4–5 Huéspedes",
         feature4: "Vista a la laguna y a los cerros",
         feature5: "Entorno de bosque nativo",
         feature6: "Deck y balcones privados",
-        feature7: "Cocina completamente equipada",
-        feature8: "Wifi de alta velocidad vía Starlink y fibra",
-        imageAlt: "Sala de estar de Altué Lodge, con sillones, balcón privado y acceso al dormitorio"
+        feature7: "Cocina completa",
+        feature8: "Wifi vía Starlink y fibra",
+        cta: "Consultar por el Depto. Ciprés",
+        imgAlt1: "Sala de estar del Depto. Ciprés, con sillones, balcón privado y acceso al dormitorio",
+        imgAlt2: "Cocina completa del Depto. Ciprés, con mesada de mármol",
+        imgAlt3: "Dormitorio principal del Depto. Ciprés, con ventana al bosque"
+      },
+      lenga: {
+        eyebrow: "Depto. Lenga",
+        title: "Espacio para compartir,<br>en medio del bosque",
+        p1: "El departamento Lenga está pensado para familias grandes: un salón principal amplio que reúne cocina completa, comedor, parrilla y un estar con sillones y mesa de ping pong.",
+        p2: "Afuera, un amplio deck con vistas a los cerros y la laguna, con acceso por escalera al bosque. Tiene entrada independiente y se conecta con el departamento Ciprés mediante escaleras.",
+        feature1: "2 dormitorios",
+        feature2: "Hasta 7 huéspedes",
+        feature3: "Placard y escritorio en ambos dormitorios",
+        feature4: "Baño completo con ducha",
+        feature5: "Cocina completa y comedor",
+        feature6: "Parrilla",
+        feature7: "Lavarropas",
+        feature8: "Estar con sillones y mesa de ping pong",
+        feature9: "Amplio deck con vistas a los cerros y la laguna",
+        feature10: "Wifi de alta velocidad",
+        cta: "Consultar por el Depto. Lenga",
+        imgAlt1: "Dormitorio matrimonial del Depto. Lenga, con respaldo de madera, escritorio y ventana al bosque",
+        imgAlt2: "Cocina del Depto. Lenga, con ventanal al deck y vista a los cerros nevados",
+        imgAlt3: "Deck del Depto. Lenga, con baranda de vidrio y vista a los cerros nevados",
+        galleryAlt1: "Deck del Depto. Lenga con baranda de vidrio y vista a los cerros nevados",
+        galleryAlt2: "Salón principal con cocina, comedor, parrilla y mesa de ping pong",
+        galleryAlt3: "Salón principal con sillones, mesa de ping pong y cocina al fondo",
+        galleryAlt4: "Cocina con ventanal al deck y vista a los cerros nevados",
+        galleryAlt5: "Dormitorio matrimonial con respaldo de madera, escritorio y ventana al bosque",
+        galleryAlt6: "Dormitorio matrimonial con respaldo de madera y mesas de luz",
+        galleryAlt7: "Dormitorio matrimonial con escritorio, placard y ventanales al bosque",
+        galleryAlt8: "Dormitorio con cuchetas y camas individuales",
+        galleryAlt9: "Dormitorio de camas individuales con placard y escritorio",
+        galleryAlt10: "Baño completo con ducha y toallero",
+        galleryAlt11: "Baño con doble bacha y espejo de pared completa",
+        galleryAlt12: "Deck con vista a la cordillera nevada entre los árboles"
+      },
+      group: {
+        eyebrow: "Para grupos y familias grandes",
+        title: "¿Viajan en grupo? Reservá los dos",
+        text: "Los departamentos se conectan mediante escalera: cada familia con su espacio y su propia entrada independiente, y todos juntos a la hora del asado.",
+        cta: "Consultá por la propiedad completa",
+        stat1: "departamentos conectados",
+        stat2: "huéspedes en total",
+        stat3: "dormitorios",
+        stat4: "baños completos"
       },
       gallery: {
         eyebrow: "Galería",
         title: "Espacios para<br>sentirte bien",
-        interiorTitle: "Interiores",
-        exteriorTitle: "Exteriores",
+        tabsAria: "Filtrar galería",
+        tabCipres: "Depto. Ciprés",
+        tabLenga: "Depto. Lenga",
+        tabExteriores: "Exteriores",
         alt0: "Sala de estar con acceso al dormitorio principal",
         alt1: "Living comedor con vista al bosque y balcón privado",
         alt2: "Cocina completa con mesada de mármol y equipamiento premium",
@@ -89,7 +156,7 @@
         alt2: "Paneles solares en el techo, con el bosque y la cordillera nevada de fondo",
         eyebrow: "Energía sustentable",
         title: "Generación de energía propia",
-        text: "Contamos con paneles solares instalados en el techo, que garantizan generación de energía propia durante toda la estadía. Una forma de habitar la Patagonia en armonía con el entorno natural que la rodea, con mínimo impacto ambiental."
+        text: "Contamos con paneles solares instalados en el techo, que abastecen a los dos departamentos y garantizan generación de energía propia durante toda la estadía. Una forma de habitar la Patagonia en armonía con el entorno natural que la rodea, con mínimo impacto ambiental."
       },
       seasons: {
         eyebrow: "Las Cuatro Estaciones",
@@ -122,7 +189,7 @@
         eyebrow: "Lugares de Interés",
         title: "Todo Bariloche,<br>a un paso de tu puerta",
         lead: "Altué Lodge se encuentra sobre el mítico Circuito Chico, rodeado de los paisajes más fotografiados de la Patagonia argentina.",
-        p1: { distance: "A pasos del depto.", text: "La aerosilla hacia el mirador con una de las vistas más elogiadas del mundo, a metros de la puerta de casa." },
+        p1: { distance: "A pasos de los deptos.", text: "La aerosilla hacia el mirador con una de las vistas más elogiadas del mundo, a metros de la puerta de casa." },
         p2: { distance: "5 min en auto", text: "El recorrido escénico más famoso de Bariloche, entre lagos, bosques y miradores infinitos." },
         p3: { distance: "8 min en auto", text: "Punto de partida de las excursiones náuticas a Isla Victoria y el Bosque de Arrayanes." },
         p4: { distance: "10 min en auto", text: "Feria de artesanos, curanto patagónico y aire de pueblo alpino." },
@@ -134,6 +201,10 @@
       contact: {
         eyebrow: "Contacto",
         title: "Reservá tu estadía<br>en Altué Lodge",
+        aptLegend: "¿Qué departamento te interesa?",
+        aptCipres: "Depto. Ciprés",
+        aptLenga: "Depto. Lenga",
+        aptAmbos: "Los dos",
         labelNombre: "Nombre y apellido",
         placeholderNombre: "Tu nombre",
         labelEmail: "Email",
@@ -147,7 +218,9 @@
         quote: "“El mejor punto de partida para conocer todo lo que hace de Bariloche un lugar único.”"
       },
       footer: {
-        tagline: "Refugio de diseño en el Cerro Campanario, Bariloche.",
+        tagline: "Dos departamentos de diseño en el Cerro Campanario, Bariloche.",
+        cipres: "Depto. Ciprés",
+        lenga: "Depto. Lenga",
         rights: "Todos los derechos reservados."
       },
       lightbox: {
@@ -162,13 +235,12 @@
     },
     en: {
       meta: {
-        title: "Altué Lodge | Apartment for Rent — Cerro Campanario, Bariloche",
-        description: "Altué Lodge: a design apartment on Cerro Campanario, Bariloche. Views of Lake Nahuel Huapi and the Patagonian forest, with its own solar power. Book your stay."
+        title: "Altué Lodge | Apartments for Rent — Cerro Campanario, Bariloche",
+        description: "Altué Lodge: two design apartments on Cerro Campanario, Bariloche. Views of Lake Nahuel Huapi and the Patagonian forest, with their own solar power. Book your stay."
       },
       skip: { link: "Skip to content" },
       nav: {
-        inicio: "Home",
-        departamento: "The Apartment",
+        departamentos: "Apartments",
         galeria: "Gallery",
         ubicacion: "Location",
         nosotros: "About Us",
@@ -184,29 +256,97 @@
         alt4: "Fiery sunset over the mountain range seen from Altué Lodge",
         // title: "Wake up among mountains,<br>fall asleep among forests.",
         title: "The best of Patagonia,<br> just outside your window",
-        subtitle: "Altué Lodge: a Patagonian design retreat with Bariloche's most sought-after views, just steps from your door.",
+        subtitle: "Altué Lodge: Patagonian design apartments with Bariloche's most sought-after views, just steps from your door.",
+        cta: "Explore the apartments",
         scrollAria: "Scroll down"
       },
-      about: {
-        eyebrow: "The Apartment",
-        title: "Your refuge in<br>Patagonia",
-        p1: "Right on Cerro Campanario, just steps from one of the most celebrated views in the world, Altué Lodge is the ideal place to stay for your vacation in Argentine Patagonia. Surrounded by a forest of cypress, radal and maiten trees, with a stunning view of Laguna El Trébol and the mountain range, while inside it keeps the warmth of Patagonian materials.",
-        p2: "Designed to help you disconnect without giving up comfort: bright rooms, a private deck with access to the forest, and a quiet setting broken only by the wind moving through the trees.",
+      apts: {
+        eyebrow: "The Apartments",
+        title: "Your refuge<br>in Patagonia",
+        lead: "Right on Cerro Campanario, just steps from one of the most celebrated views in the world, Altué Lodge is the ideal place to stay for your vacation in Bariloche. Surrounded by native forest, with stunning views of Laguna El Trébol and the mountain range, it's a place where the only sound is the wind moving through the trees. We offer two apartments, each with its own private entrance, connected by stairs. Choose the one that best fits your trip, or book both to come as a group.",
+        cta: "View apartment",
+        cipresImgAlt: "Living room of the Ciprés Apartment, with armchairs and a private balcony",
+        cipresCapacity: "4–5 guests",
+        cipresName: "Ciprés Apartment",
+        cipresText: "Bright rooms and private balconies overlooking Laguna El Trébol and the mountains, surrounded by native forest.",
+        cipresF1: "2 bedrooms",
+        cipresF2: "2 bathrooms",
+        cipresF3: "Deck and balconies",
+        lengaImgAlt: "Double bedroom of the Lenga Apartment, with a wooden headboard and a desk by the window",
+        lengaCapacity: "Up to 7 guests",
+        lengaName: "Lenga Apartment",
+        lengaText: "A spacious shared living area with a grill and a ping pong table, plus a large deck with panoramic views and direct access down to the forest.",
+        lengaF1: "2 bedrooms",
+        lengaF2: "1 bathroom",
+        lengaF3: "Grill and ping pong"
+      },
+      cipres: {
+        eyebrow: "Ciprés Apartment",
+        title: "Your refuge<br>to unwind",
+        p1: "The Ciprés Apartment is designed for those seeking calm: bright, warm rooms with two bedrooms, two full bathrooms and a living-dining room with an equipped kitchen.",
+        p2: "Outside, a private deck and balconies overlook the lagoon and the mountains, with direct access to the forest. It has its own private entrance and connects to the Lenga Apartment by stairs.",
         feature1: "2 Bedrooms with TV",
         feature2: "2 Full bathrooms",
         feature3: "4–5 Guests",
         feature4: "Views of the lagoon and the mountains",
         feature5: "Native forest surroundings",
         feature6: "Private deck and balconies",
-        feature7: "Fully equipped kitchen",
-        feature8: "High-speed wifi via Starlink and fiber",
-        imageAlt: "Altué Lodge living room, with armchairs, a private balcony and access to the bedroom"
+        feature7: "Full kitchen",
+        feature8: "Wifi via Starlink and fiber",
+        cta: "Ask about the Ciprés Apartment",
+        imgAlt1: "Living room of the Ciprés Apartment, with armchairs, a private balcony and access to the bedroom",
+        imgAlt2: "Full kitchen of the Ciprés Apartment, with a marble countertop",
+        imgAlt3: "Main bedroom of the Ciprés Apartment, with a window onto the forest"
+      },
+      lenga: {
+        eyebrow: "Lenga Apartment",
+        title: "Room to share,<br>in the middle of the forest",
+        p1: "The Lenga Apartment is designed for large families: a spacious main room that brings together a full kitchen, dining area, grill and a lounge with armchairs and a ping pong table.",
+        p2: "Outside, a large deck with views of the mountains and the lagoon, with stairs down to the forest. It has its own private entrance and connects to the Ciprés Apartment by stairs.",
+        feature1: "2 bedrooms",
+        feature2: "Up to 7 guests",
+        feature3: "Closet and desk in both bedrooms",
+        feature4: "Full bathroom with shower",
+        feature5: "Full kitchen and dining area",
+        feature6: "Grill",
+        feature7: "Washing machine",
+        feature8: "Lounge with armchairs and a ping pong table",
+        feature9: "Large deck with views of the mountains and the lagoon",
+        feature10: "High-speed wifi",
+        cta: "Ask about the Lenga Apartment",
+        imgAlt1: "Double bedroom of the Lenga Apartment, with a wooden headboard, a desk and a window onto the forest",
+        imgAlt2: "Kitchen of the Lenga Apartment, with a large window onto the deck and views of the snow-capped mountains",
+        imgAlt3: "Deck of the Lenga Apartment, with a glass railing and views of the snow-capped mountains",
+        galleryAlt1: "Deck of the Lenga Apartment with a glass railing and views of the snow-capped mountains",
+        galleryAlt2: "Main room with kitchen, dining area, grill and ping pong table",
+        galleryAlt3: "Main room with armchairs, ping pong table and the kitchen in the background",
+        galleryAlt4: "Kitchen with a large window onto the deck and views of the snow-capped mountains",
+        galleryAlt5: "Double bedroom with a wooden headboard, a desk and a window onto the forest",
+        galleryAlt6: "Double bedroom with a wooden headboard and bedside tables",
+        galleryAlt7: "Double bedroom with a desk, closet and windows onto the forest",
+        galleryAlt8: "Bedroom with bunk beds and single beds",
+        galleryAlt9: "Single-bed bedroom with closet and desk",
+        galleryAlt10: "Full bathroom with shower and towel rail",
+        galleryAlt11: "Bathroom with double sink and full-wall mirror",
+        galleryAlt12: "Deck with views of the snow-capped mountains through the trees"
+      },
+      group: {
+        eyebrow: "For groups and large families",
+        title: "Traveling as a group? Book both",
+        text: "The apartments are connected by stairs: each family gets its own space and private entrance, and everyone comes together for the barbecue.",
+        cta: "Ask about the whole property",
+        stat1: "connected apartments",
+        stat2: "guests in total",
+        stat3: "bedrooms",
+        stat4: "full bathrooms"
       },
       gallery: {
         eyebrow: "Gallery",
         title: "Spaces to<br>feel good",
-        interiorTitle: "Interior",
-        exteriorTitle: "Exterior",
+        tabsAria: "Filter gallery",
+        tabCipres: "Ciprés Apartment",
+        tabLenga: "Lenga Apartment",
+        tabExteriores: "Exterior",
         alt0: "Living room with access to the main bedroom",
         alt1: "Living-dining room with forest views and a private balcony",
         alt2: "Full kitchen with marble countertop and premium appliances",
@@ -245,7 +385,7 @@
         alt2: "Solar panels on the roof, with the forest and snow-covered mountains in the background",
         eyebrow: "Sustainable energy",
         title: "Our own power generation",
-        text: "The property has solar panels installed on the roof, guaranteeing its own power generation throughout your stay. A way of living in Patagonia in harmony with the natural surroundings, with minimal environmental impact."
+        text: "The property has solar panels installed on the roof that power both apartments, guaranteeing its own power generation throughout your stay. A way of living in Patagonia in harmony with the natural surroundings, with minimal environmental impact."
       },
       seasons: {
         eyebrow: "The Four Seasons",
@@ -278,7 +418,7 @@
         eyebrow: "Places of Interest",
         title: "All of Bariloche,<br>just steps from your door",
         lead: "Altué Lodge sits on the legendary Circuito Chico, surrounded by the most photographed landscapes in Argentine Patagonia.",
-        p1: { distance: "Steps from the apartment", text: "The chairlift to the viewpoint with one of the most celebrated views in the world, just meters from our door." },
+        p1: { distance: "Steps from the apartments", text: "The chairlift to the viewpoint with one of the most celebrated views in the world, just meters from our door." },
         p2: { distance: "5 min by car", text: "Bariloche's most famous scenic drive, through lakes, forests and endless viewpoints." },
         p3: { distance: "8 min by car", text: "Starting point for boat excursions to Isla Victoria and the Arrayanes Forest." },
         p4: { distance: "10 min by car", text: "Craft fair, traditional Patagonian curanto, and the feel of an alpine village." },
@@ -290,6 +430,10 @@
       contact: {
         eyebrow: "Contact",
         title: "Book your stay<br>at Altué Lodge",
+        aptLegend: "Which apartment are you interested in?",
+        aptCipres: "Ciprés Apartment",
+        aptLenga: "Lenga Apartment",
+        aptAmbos: "Both",
         labelNombre: "Full name",
         placeholderNombre: "Your name",
         labelEmail: "Email",
@@ -303,7 +447,9 @@
         quote: "“The perfect starting point to discover everything that makes Bariloche a unique place.”"
       },
       footer: {
-        tagline: "A design retreat on Cerro Campanario, Bariloche.",
+        tagline: "Two design apartments on Cerro Campanario, Bariloche.",
+        cipres: "Ciprés Apartment",
+        lenga: "Lenga Apartment",
         rights: "All rights reserved."
       },
       lightbox: {
@@ -361,7 +507,6 @@
       btn.classList.toggle("is-active", btn.getAttribute("data-lang") === lang);
     });
 
-    rebuildGalleryCaptions(lang);
     if (typeof refreshOpenLightbox === "function") refreshOpenLightbox();
   }
 
@@ -475,47 +620,83 @@
   }
 
   /* ---------- Galería + Lightbox ---------- */
-  var GALLERY_ITEMS = [
-    // Interiores
-    { src: "img/interior-estar.jpg", es: "Sala de estar", en: "Living room" },
-    { src: "img/interior-living.jpg", es: "Living comedor con vista al bosque y deck privado", en: "Living-dining room with forest views and a private deck" },
-    { src: "img/interior-cocina-full.jpg", es: "Cocina completa", en: "Full kitchen" },
-    { src: "img/interior-pasillo.jpg", es: "Pasillo de acceso", en: "Entry hallway" },
-    { src: "img/interior-dorm-principal-vanitory.jpg", es: "Dormitorio principal con placard y TV smart", en: "Main bedroom with closet and smart TV" },
-    { src: "img/interior-dorm-principal-ventana.jpg", es: "Dormitorio principal con placard y TV smart", en: "Main bedroom with closet and smart TV" },
-    { src: "img/interior-bano-principal.jpg", es: "Baño completo", en: "Full bathroom" },
-    { src: "img/interior-dorm-individual.jpg", es: "Dormitorio con cama individual y cuchetas", en: "Bedroom with a single bed and bunk beds" },
-    { src: "img/interior-dorm-cuchetas.jpg", es: "Dormitorio con cama individual y cuchetas", en: "Bedroom with a single bed and bunk beds" },
-    { src: "img/interior-bano-secundario-ducha.jpg", es: "Baño completo", en: "Full bathroom" },
-    { src: "img/interior-bano-secundario-tocador.jpg", es: "Baño completo", en: "Full bathroom" },
-    { src: "img/interior-cocina-pasillo.jpg", es: "Cocina completa", en: "Full kitchen" },
-    { src: "img/interior-comedor-mesa.jpg", es: "Mesa de comedor con vista al bosque", en: "Dining table with forest views" },
-    // Exteriores
-    { src: "img/ext-balcon-sol.jpg", es: "Deck privado con acceso al bosque", en: "Private deck with forest access" },
-    { src: "img/ext-deck-nieve-lago.jpg", es: "Deck con vista a la laguna entre los árboles", en: "Deck with lagoon views through the trees" },
-    { src: "img/ext-fachada-nieve.jpg", es: "Ingreso entre los árboles", en: "Entrance among the trees" },
-    { src: "img/ext-deck-deshielo.jpg", es: "Deck de madera", en: "Wooden deck" },
-    { src: "img/deck-wood.jpg", es: "Deck privado con acceso al bosque", en: "Private deck with forest access" },
-    { src: "img/deck-view.jpg", es: "Deck privado con acceso al bosque", en: "Private deck with forest access" },
-    { src: "img/ext-escaleras-balcones.jpg", es: "Escaleras y balcones asomados al bosque nevado", en: "Stairs and balconies overlooking the snow-covered forest" },
-    { src: "img/ext-senda-nieve.jpg", es: "Senda nevada de acceso entre cipreses", en: "Snow-covered access path among cypress trees" },
-    { src: "img/exterior-02.jpg", es: "Arquitectura contemporánea con vista a la cordillera", en: "Contemporary architecture with mountain range views" },
-    { src: "img/exterior-04.jpg", es: "Diseño integrado al paisaje", en: "Design integrated into the landscape" },
-    { src: "img/ext-luna.jpg", es: "Luna llena sobre la cordillera nevada", en: "Full moon over the snow-covered mountains" },
-    { src: "img/exterior-02.jpg", es: "Arquitectura contemporánea con vista a la cordillera", en: "Contemporary architecture with mountain range views" },
-    { src: "img/exterior-03.jpg", es: "Ingreso principal en piedra y madera nativa", en: "Main entrance in stone and native wood" },
-    { src: "img/mapa-ubicacion.svg", es: "Mapa del barrio con la ubicación aproximada de Altué Lodge", en: "Neighborhood map with Altué Lodge's approximate location" }
-  ];
-  var gallery = GALLERY_ITEMS.map(function (item) {
-    return { src: item.src, caption: item.es };
-  });
-  var LOCATION_MAP_INDEX = gallery.length - 1;
+  var GALLERY_GROUPS = {
+    cipres: [
+      { src: "img/interior-estar.jpg", es: "Sala de estar", en: "Living room" },
+      { src: "img/interior-living.jpg", es: "Living comedor con vista al bosque y deck privado", en: "Living-dining room with forest views and a private deck" },
+      { src: "img/interior-cocina-full.jpg", es: "Cocina completa", en: "Full kitchen" },
+      { src: "img/interior-pasillo.jpg", es: "Pasillo de acceso", en: "Entry hallway" },
+      { src: "img/interior-dorm-principal-vanitory.jpg", es: "Dormitorio principal con placard y TV smart", en: "Main bedroom with closet and smart TV" },
+      { src: "img/interior-dorm-principal-ventana.jpg", es: "Dormitorio principal con placard y TV smart", en: "Main bedroom with closet and smart TV" },
+      { src: "img/interior-bano-principal.jpg", es: "Baño completo", en: "Full bathroom" },
+      { src: "img/interior-dorm-individual.jpg", es: "Dormitorio con cama individual y cuchetas", en: "Bedroom with a single bed and bunk beds" },
+      { src: "img/interior-dorm-cuchetas.jpg", es: "Dormitorio con cama individual y cuchetas", en: "Bedroom with a single bed and bunk beds" },
+      { src: "img/interior-bano-secundario-ducha.jpg", es: "Baño completo", en: "Full bathroom" },
+      { src: "img/interior-bano-secundario-tocador.jpg", es: "Baño completo", en: "Full bathroom" },
+      { src: "img/interior-cocina-pasillo.jpg", es: "Cocina completa", en: "Full kitchen" },
+      { src: "img/interior-comedor-mesa.jpg", es: "Mesa de comedor con vista al bosque", en: "Dining table with forest views" }
+    ],
+    lenga: [
+      { src: "img/lenga-deck.jpg", es: "Deck con baranda de vidrio y vista a los cerros nevados", en: "Deck with a glass railing and views of the snow-capped mountains" },
+      { src: "img/lenga-salon.jpg", es: "Salón principal con cocina, comedor, parrilla y ping pong", en: "Main room with kitchen, dining area, grill and ping pong" },
+      { src: "img/lenga-salon-2.jpg", es: "Estar con sillones y mesa de ping pong", en: "Lounge with armchairs and a ping pong table" },
+      { src: "img/lenga-cocina.jpg", es: "Cocina completa con vista a los cerros", en: "Full kitchen with mountain views" },
+      { src: "img/lenga-dorm-matrimonial.jpg", es: "Dormitorio matrimonial con escritorio", en: "Double bedroom with desk" },
+      { src: "img/lenga-dorm-matrimonial-2.jpg", es: "Dormitorio matrimonial", en: "Double bedroom" },
+      { src: "img/lenga-dorm-matrimonial-3.jpg", es: "Dormitorio matrimonial con placard y escritorio", en: "Double bedroom with closet and desk" },
+      { src: "img/lenga-dorm-individuales.jpg", es: "Dormitorio con cuchetas y camas individuales", en: "Bedroom with bunk beds and single beds" },
+      { src: "img/lenga-dorm-individuales-2.jpg", es: "Dormitorio de camas individuales con placard y escritorio", en: "Single-bed bedroom with closet and desk" },
+      { src: "img/lenga-bano-ducha.jpg", es: "Baño completo con ducha", en: "Full bathroom with shower" },
+      { src: "img/lenga-bano-doble-bacha.jpg", es: "Baño con doble bacha", en: "Bathroom with double sink" },
+      { src: "img/lenga-deck-2.jpg", es: "Deck con vista a la cordillera", en: "Deck with mountain views" }
+    ],
+    exteriores: [
+      { src: "img/ext-balcon-sol.jpg", es: "Deck privado con acceso al bosque", en: "Private deck with forest access" },
+      { src: "img/ext-deck-nieve-lago.jpg", es: "Deck con vista a la laguna entre los árboles", en: "Deck with lagoon views through the trees" },
+      { src: "img/ext-fachada-nieve.jpg", es: "Ingreso entre los árboles", en: "Entrance among the trees" },
+      { src: "img/ext-deck-deshielo.jpg", es: "Deck de madera", en: "Wooden deck" },
+      { src: "img/deck-wood.jpg", es: "Deck privado con acceso al bosque", en: "Private deck with forest access" },
+      { src: "img/deck-view.jpg", es: "Deck privado con acceso al bosque", en: "Private deck with forest access" },
+      { src: "img/ext-escaleras-balcones.jpg", es: "Escaleras y balcones asomados al bosque nevado", en: "Stairs and balconies overlooking the snow-covered forest" },
+      { src: "img/ext-senda-nieve.jpg", es: "Senda nevada de acceso entre cipreses", en: "Snow-covered access path among cypress trees" },
+      { src: "img/exterior-02.jpg", es: "Arquitectura contemporánea con vista a la cordillera", en: "Contemporary architecture with mountain range views" },
+      { src: "img/exterior-04.jpg", es: "Diseño integrado al paisaje", en: "Design integrated into the landscape" },
+      { src: "img/ext-luna.jpg", es: "Luna llena sobre la cordillera nevada", en: "Full moon over the snow-covered mountains" },
+      { src: "img/exterior-03.jpg", es: "Ingreso principal en piedra y madera nativa", en: "Main entrance in stone and native wood" }
+    ],
+    mapa: [
+      { src: "img/mapa-ubicacion.svg", es: "Mapa del barrio con la ubicación aproximada de Altué Lodge", en: "Neighborhood map with Altué Lodge's approximate location" }
+    ]
+  };
+  var currentGroup = "cipres";
+  var MAP_GROUP = "mapa";
 
-  function rebuildGalleryCaptions(lang) {
-    for (var i = 0; i < GALLERY_ITEMS.length; i++) {
-      gallery[i].caption = GALLERY_ITEMS[i][lang] || GALLERY_ITEMS[i].es;
-    }
+  function currentItems() {
+    return GALLERY_GROUPS[currentGroup] || [];
   }
+
+  /* ---------- Pestañas de la galería ---------- */
+  var galleryTabs = document.querySelectorAll(".gallery-tab");
+  var galleryPanels = document.querySelectorAll(".gallery-group[data-group]");
+
+  function selectGalleryTab(group) {
+    galleryTabs.forEach(function (tab) {
+      tab.setAttribute("aria-pressed", tab.getAttribute("data-gallery-tab") === group ? "true" : "false");
+    });
+    galleryPanels.forEach(function (panel) {
+      var isActive = panel.getAttribute("data-group") === group;
+      panel.hidden = !isActive;
+      if (isActive) {
+        panel.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("visible"); });
+      }
+    });
+  }
+
+  galleryTabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      selectGalleryTab(tab.getAttribute("data-gallery-tab"));
+    });
+  });
 
   var lightbox = document.getElementById("lightbox");
   var lightboxImgWrap = document.getElementById("lightboxImgWrap");
@@ -548,7 +729,7 @@
   var pinchStartScale = 1;
 
   function isZoomable() {
-    return currentIndex === LOCATION_MAP_INDEX;
+    return currentGroup === MAP_GROUP;
   }
 
   function applyZoomTransform() {
@@ -675,17 +856,25 @@
     if (e.touches.length === 0) isPanning = false;
   }, { passive: true });
 
+  /* Muestra una foto del grupo abierto; las flechas recorren solo ese grupo */
   function showImage(index) {
-    currentIndex = (index + gallery.length) % gallery.length;
-    var item = gallery[currentIndex];
+    var items = currentItems();
+    if (!items.length) return;
+    currentIndex = (index + items.length) % items.length;
+    var item = items[currentIndex];
+    var caption = item[currentLang] || item.es;
     lightboxImg.src = item.src;
-    lightboxImg.alt = item.caption;
-    lightboxCaption.textContent = item.caption;
+    lightboxImg.alt = caption;
+    lightboxCaption.textContent = caption;
+    var single = items.length < 2;
+    lightboxPrev.hidden = single;
+    lightboxNext.hidden = single;
     updateZoomAvailability();
   }
 
-  function openLightbox(index) {
+  function openLightbox(group, index) {
     lastFocused = document.activeElement;
+    currentGroup = group;
     showImage(index);
     lightbox.classList.add("open");
     document.body.style.overflow = "hidden";
@@ -705,14 +894,16 @@
 
   galleryItems.forEach(function (item) {
     item.addEventListener("click", function () {
-      openLightbox(parseInt(item.getAttribute("data-index"), 10));
+      var panel = item.closest("[data-group]");
+      if (!panel) return;
+      openLightbox(panel.getAttribute("data-group"), parseInt(item.getAttribute("data-index"), 10));
     });
   });
 
   var locationMapTrigger = document.getElementById("locationMapTrigger");
   if (locationMapTrigger) {
     locationMapTrigger.addEventListener("click", function () {
-      openLightbox(LOCATION_MAP_INDEX);
+      openLightbox(MAP_GROUP, 0);
     });
   }
 
@@ -755,15 +946,18 @@
     var email = document.getElementById("email").value.trim();
     var fechas = document.getElementById("fechas").value.trim();
     var mensaje = document.getElementById("mensaje").value.trim();
+    var deptoInput = contactForm.querySelector('input[name="depto"]:checked');
+    var depto = deptoInput ? deptoInput.value : "";
 
     var wa = currentLang === "en"
-      ? { greeting: "Hi! I'd like to inquire about Altué Lodge.", name: "Name: ", email: "Email: ", dates: "Dates / guests: ", message: "Message: " }
-      : { greeting: "Hola! Quiero consultar por Altué Lodge.", name: "Nombre: ", email: "Email: ", dates: "Fechas / huéspedes: ", message: "Mensaje: " };
+      ? { greeting: "Hi! I'd like to inquire about Altué Lodge.", apt: "Apartment: ", name: "Name: ", email: "Email: ", dates: "Dates / guests: ", message: "Message: ",
+          apts: { cipres: "Ciprés Apartment", lenga: "Lenga Apartment", ambos: "Both apartments (Ciprés and Lenga)" } }
+      : { greeting: "Hola! Quiero consultar por Altué Lodge.", apt: "Departamento: ", name: "Nombre: ", email: "Email: ", dates: "Fechas / huéspedes: ", message: "Mensaje: ",
+          apts: { cipres: "Depto. Ciprés", lenga: "Depto. Lenga", ambos: "Los dos departamentos (Ciprés y Lenga)" } };
 
-    var lines = [
-      wa.greeting,
-      wa.name + nombre
-    ];
+    var lines = [wa.greeting];
+    if (depto && wa.apts[depto]) lines.push(wa.apt + wa.apts[depto]);
+    lines.push(wa.name + nombre);
     if (email) lines.push(wa.email + email);
     if (fechas) lines.push(wa.dates + fechas);
     lines.push(wa.message + mensaje);
@@ -771,6 +965,14 @@
     var text = encodeURIComponent(lines.join("\n"));
     var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + text;
     window.open(url, "_blank", "noopener");
+  });
+
+  /* Los CTA "Consultar por…" preseleccionan el departamento en el formulario */
+  document.querySelectorAll("a[data-apt]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      var radio = contactForm.querySelector('input[name="depto"][value="' + link.getAttribute("data-apt") + '"]');
+      if (radio) radio.checked = true;
+    });
   });
 
   applyLanguage(initialLang);

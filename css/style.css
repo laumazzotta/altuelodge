@@ -1111,6 +1111,7 @@ p { line-height: 1.7; margin: 0 0 1em; color: var(--text-muted); }
   font-size: 1.1rem;
 }
 .lightbox-arrow:hover { transform: translateY(-50%) scale(1.08); }
+.lightbox-arrow[hidden] { display: none; }
 .lightbox-prev { left: 24px; }
 .lightbox-next { right: 24px; }
 
