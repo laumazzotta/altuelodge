@@ -287,7 +287,7 @@
         title: "A refuge<br>to unwind",
         p1: "The Ciprés Apartment is designed for those seeking calm: bright, warm rooms with two bedrooms, two full bathrooms and a living-dining room with an equipped kitchen.",
         p2: "Outside, a private deck and balconies overlook the lagoon and the mountains, with direct access to the forest. It has its own private entrance and connects to the Lenga Apartment by stairs.",
-        feature1: "2 Bedrooms with TV",
+        feature1: "2 Bedrooms with TV, closet and desk",
         feature2: "2 Full bathrooms",
         feature3: "4–5 Guests",
         feature4: "Views of the lagoon and the mountains",
