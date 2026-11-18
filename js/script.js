@@ -540,6 +540,14 @@
     var savedLang = localStorage.getItem(LANG_KEY);
     if (savedLang === "es" || savedLang === "en") initialLang = savedLang;
   } catch (e) {}
+  /* ?lang=en / ?lang=es (p. ej. al llegar desde el link en inglés en/) tiene prioridad */
+  try {
+    var urlLang = new URLSearchParams(window.location.search).get("lang");
+    if (urlLang === "es" || urlLang === "en") {
+      initialLang = urlLang;
+      try { localStorage.setItem(LANG_KEY, urlLang); } catch (e) {}
+    }
+  } catch (e) {}
 
   /* ---------- Año dinámico en el footer ---------- */
   var yearEl = document.getElementById("year");
