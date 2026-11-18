@@ -693,6 +693,16 @@
   var currentGroup = "cipres";
   var MAP_GROUP = "mapa";
 
+  /* Orden en que se encadenan los grupos al llegar al final (o al principio) */
+  var GROUP_SEQUENCE = ["cipres", "lenga", "exteriores"];
+
+  /* Pie de foto del lightbox: solo el nombre del grupo */
+  var GROUP_LABELS = {
+    cipres: { es: "Departamento Ciprés", en: "Ciprés Apartment" },
+    lenga: { es: "Departamento Lenga", en: "Lenga Apartment" },
+    exteriores: { es: "Exteriores", en: "Outdoors" }
+  };
+
   function currentItems() {
     return GALLERY_GROUPS[currentGroup] || [];
   }
@@ -878,25 +888,44 @@
     if (e.touches.length === 0) isPanning = false;
   }, { passive: true });
 
-  /* Muestra una foto del grupo abierto; las flechas recorren solo ese grupo */
+  /* Muestra una foto del grupo abierto */
   function showImage(index) {
     var items = currentItems();
     if (!items.length) return;
     currentIndex = (index + items.length) % items.length;
     var item = items[currentIndex];
-    var caption = item[currentLang] || item.es;
+    var description = item[currentLang] || item.es;
+    var label = GROUP_LABELS[currentGroup];
     lightboxImg.src = typeof item.src === "function" ? item.src() : item.src;
-    lightboxImg.alt = caption;
-    lightboxCaption.textContent = caption;
-    var single = items.length < 2;
+    lightboxImg.alt = description;
+    lightboxCaption.textContent = label ? (label[currentLang] || label.es) : description;
+    var single = items.length < 2 && !chainGroups;
     lightboxPrev.hidden = single;
     lightboxNext.hidden = single;
     updateZoomAvailability();
   }
 
-  function openLightbox(group, index) {
+  /* Avanza/retrocede una foto. Si el visor se abrió desde la sección Galería,
+     al pasar el final (o el principio) de un grupo continúa con el siguiente
+     (o el anterior). Desde las fichas de cada depto. se recorre solo ese grupo. */
+  var chainGroups = false;
+
+  function stepImage(delta) {
+    var target = currentIndex + delta;
+    var seqPos = chainGroups ? GROUP_SEQUENCE.indexOf(currentGroup) : -1;
+    if (seqPos !== -1 && (target < 0 || target >= currentItems().length)) {
+      var n = GROUP_SEQUENCE.length;
+      currentGroup = GROUP_SEQUENCE[(seqPos + (delta > 0 ? 1 : -1) + n) % n];
+      target = delta > 0 ? 0 : currentItems().length - 1;
+      selectGalleryTab(currentGroup);
+    }
+    showImage(target);
+  }
+
+  function openLightbox(group, index, chain) {
     lastFocused = document.activeElement;
     currentGroup = group;
+    chainGroups = !!chain;
     showImage(index);
     lightbox.classList.add("open");
     document.body.style.overflow = "hidden";
@@ -918,7 +947,7 @@
     item.addEventListener("click", function () {
       var panel = item.closest("[data-group]");
       if (!panel) return;
-      openLightbox(panel.getAttribute("data-group"), parseInt(item.getAttribute("data-index"), 10));
+      openLightbox(panel.getAttribute("data-group"), parseInt(item.getAttribute("data-index"), 10), true);
     });
   });
 
@@ -941,8 +970,8 @@
   }
 
   lightboxClose.addEventListener("click", closeLightbox);
-  lightboxPrev.addEventListener("click", function () { showImage(currentIndex - 1); });
-  lightboxNext.addEventListener("click", function () { showImage(currentIndex + 1); });
+  lightboxPrev.addEventListener("click", function () { stepImage(-1); });
+  lightboxNext.addEventListener("click", function () { stepImage(1); });
 
   lightbox.addEventListener("click", function (e) {
     if (e.target === lightbox) closeLightbox();
@@ -952,8 +981,8 @@
     if (!lightbox.classList.contains("open")) return;
     if (e.key === "Escape") closeLightbox();
     if (zoomScale > 1) return;
-    if (e.key === "ArrowLeft") showImage(currentIndex - 1);
-    if (e.key === "ArrowRight") showImage(currentIndex + 1);
+    if (e.key === "ArrowLeft") stepImage(-1);
+    if (e.key === "ArrowRight") stepImage(1);
   });
 
   /* soporte swipe en touch */
@@ -965,7 +994,7 @@
     if (touchStartX === null || zoomScale > 1) { touchStartX = null; return; }
     var delta = e.changedTouches[0].clientX - touchStartX;
     if (Math.abs(delta) > 40) {
-      showImage(delta > 0 ? currentIndex - 1 : currentIndex + 1);
+      stepImage(delta > 0 ? -1 : 1);
     }
     touchStartX = null;
   }, { passive: true });
