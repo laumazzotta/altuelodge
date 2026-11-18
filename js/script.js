@@ -8,7 +8,7 @@
     es: {
       meta: {
         title: "Altué Lodge | Departamentos en alquiler — Cerro Campanario, Bariloche",
-        description: "Altué Lodge: dos departamentos de diseño en el Cerro Campanario, Bariloche. Vistas al lago Nahuel Huapi y al bosque patagónico, con energía solar propia. Reservá tu estadía."
+        description: "Altué Lodge: departamentos de diseño en el Cerro Campanario, Bariloche. Vistas a Laguna El Trébol y a la Cordillera Patagónica, con energía solar propia. Reservá tu estadía."
       },
       skip: { link: "Saltar al contenido" },
       nav: {
@@ -86,21 +86,21 @@
         feature9: "Amplio deck con vistas a los cerros y la laguna",
         feature10: "Wifi de alta velocidad",
         cta: "Consultar por el Depto. Lenga",
-        imgAlt1: "Dormitorio matrimonial del Depto. Lenga, con respaldo de madera, escritorio y ventana al bosque",
-        imgAlt2: "Cocina del Depto. Lenga, con ventanal al deck y vista a los cerros nevados",
-        imgAlt3: "Deck del Depto. Lenga, con baranda de vidrio y vista a los cerros nevados",
-        galleryAlt1: "Deck del Depto. Lenga con baranda de vidrio y vista a los cerros nevados",
-        galleryAlt2: "Salón principal con cocina, comedor, parrilla y mesa de ping pong",
-        galleryAlt3: "Salón principal con sillones, mesa de ping pong y cocina al fondo",
-        galleryAlt4: "Cocina con ventanal al deck y vista a los cerros nevados",
-        galleryAlt5: "Dormitorio matrimonial con respaldo de madera, escritorio y ventana al bosque",
-        galleryAlt6: "Dormitorio matrimonial con respaldo de madera y mesas de luz",
-        galleryAlt7: "Dormitorio matrimonial con escritorio, placard y ventanales al bosque",
-        galleryAlt8: "Dormitorio con cuchetas y camas individuales",
+        imgAlt1: "Dormitorio matrimonial del Depto. Lenga",
+        imgAlt2: "Cocina del Depto. Lenga, con ventanal al deck y vista a los cerros",
+        imgAlt3: "Deck del Depto. Lenga, con vista a los cerros y acceso directo al bosque",
+        galleryAlt1: "Deck del Depto. Lenga, con vista a los cerros y acceso directo al bosque",
+        galleryAlt2: "Salón principal",
+        galleryAlt3: "Salón principal",
+        galleryAlt4: "Cocina con vista a los cerros",
+        galleryAlt5: "Dormitorio matrimonial con escritorio y placard",
+        galleryAlt6: "Dormitorio matrimonial con escritorio y placard",
+        galleryAlt7: "Dormitorio matrimonial con escritorio y placard",
+        galleryAlt8: "Dormitorio con camas individuales y carricamas",
         galleryAlt9: "Dormitorio de camas individuales con placard y escritorio",
         galleryAlt10: "Baño completo con ducha y toallero",
         galleryAlt11: "Baño con doble bacha y espejo de pared completa",
-        galleryAlt12: "Deck con vista a la cordillera nevada entre los árboles"
+        galleryAlt12: "Deck con vista a la cordillera y acceso directo al bosque"
       },
       group: {
         eyebrow: "Para grupos y familias grandes",
@@ -119,31 +119,31 @@
         tabCipres: "Depto. Ciprés",
         tabLenga: "Depto. Lenga",
         tabExteriores: "Exteriores",
-        alt0: "Sala de estar con acceso al dormitorio principal",
+        alt0: "Sala de estar",
         alt1: "Living comedor con vista al bosque y balcón privado",
-        alt2: "Cocina completa con mesada de mármol y equipamiento premium",
-        alt3: "Pasillo de acceso con vista a la cocina",
-        alt4: "Dormitorio principal con vestidor y espejo circular",
-        alt5: "Dormitorio principal con ventana al bosque",
-        alt6: "Baño principal revestido en mármol",
+        alt2: "Cocina completa",
+        alt3: "Pasillo de acceso",
+        alt4: "Dormitorio matrimonial",
+        alt5: "Dormitorio matrimonial",
+        alt6: "Baño principal",
         alt7: "Dormitorio individual con vista al bosque",
         alt8: "Dormitorio con cama individual y cuchetas",
         alt9: "Baño secundario con ducha y ventana al bosque",
-        alt10: "Baño secundario con tocador y espejo ovalado",
-        alt11: "Cocina con heladera y acceso desde el pasillo",
-        alt12: "Mesa de comedor con vista al bosque a través del ventanal",
-        alt13: "Balcón nevado con sol filtrándose entre los árboles",
-        alt14: "Deck nevado con vista al lago entre los árboles",
+        alt10: "Baño secundario",
+        alt11: "Cocina completa",
+        alt12: "Mesa de comedor con vista al bosque",
+        alt13: "Balcón nevado",
+        alt14: "Deck",
         alt15: "Fachada de Altué Lodge entre los árboles nevados",
         alt16: "Deck privado",
         alt17: "Galería de madera hacia el bosque",
-        alt18: "Deck privado con vista al lago",
+        alt18: "Deck",
         alt19: "Escaleras y balcones asomados al bosque nevado",
         alt20: "Senda nevada de acceso entre cipreses",
         alt21: "Arquitectura contemporánea con vista a la cordillera",
         alt22: "Diseño de líneas puras integrado al paisaje",
         alt23: "Luna llena sobre la cordillera nevada, con niebla en el valle",
-        alt25: "Ingreso principal en piedra y madera nativa"
+        alt25: "Ingreso principal"
       },
       location: {
         eyebrow: "Cómo llegar",
@@ -166,7 +166,7 @@
         winterAlt: "Lago congelado y cordillera nevada vistos desde Altué Lodge en invierno",
         winterTitle: "Invierno",
         winterText: "Montañas nevadas y el lago en calma. La temporada de esquí en el Cerro Catedral, a minutos de casa, y las tardes de relax mirando el atardecer.",
-        springAlt: "Doble arcoíris sobre el lago Nahuel Huapi en primavera",
+        springAlt: "Lupinos violetas y rosas junto a un arroyo y el bosque nativo en primavera",
         springTitle: "Primavera",
         springText: "El deshielo despierta al bosque nativo. Días que se alargan, arcoíris después de la lluvia y el aire lleno de aroma a lupinos y tulipanes.",
         summerAlt: "Cielo despejado y lago Nahuel Huapi en un día de verano",
@@ -219,10 +219,11 @@
         quote: "“El mejor punto de partida para conocer todo lo que hace de Bariloche un lugar único.”"
       },
       footer: {
-        tagline: "Dos departamentos de diseño en el Cerro Campanario, Bariloche.",
+        tagline: "Departamentos de diseño en el Cerro Campanario, Bariloche.",
         cipres: "Depto. Ciprés",
         lenga: "Depto. Lenga",
-        rights: "Todos los derechos reservados."
+        rights: "Todos los derechos reservados.",
+        madeBy: "Hecho con ♡ por"
       },
       lightbox: {
         dialogAria: "Visor de imágenes",
@@ -231,13 +232,14 @@
         nextAria: "Imagen siguiente",
         zoomInAria: "Acercar",
         zoomOutAria: "Alejar",
-        zoomResetAria: "Restablecer zoom"
+        zoomResetAria: "Restablecer zoom",
+        seeMore: "Ver más"
       }
     },
     en: {
       meta: {
         title: "Altué Lodge | Apartments for Rent — Cerro Campanario, Bariloche",
-        description: "Altué Lodge: two design apartments on Cerro Campanario, Bariloche. Views of Lake Nahuel Huapi and the Patagonian forest, with their own solar power. Book your stay."
+        description: "Altué Lodge: Design apartments on Cerro Campanario, Bariloche. Views of El Trébol Lagoon and the Patagonian Mountains, with their own solar power. Book your stay."
       },
       skip: { link: "Skip to content" },
       nav: {
@@ -396,7 +398,7 @@
         winterAlt: "Frozen lake and snow-covered mountains seen from Altué Lodge in winter",
         winterTitle: "Winter",
         winterText: "Snow-covered mountains and a calm lake. Ski season at Cerro Catedral, minutes from home, and relaxed evenings watching the sunset.",
-        springAlt: "Double rainbow over Lake Nahuel Huapi in spring",
+        springAlt: "Purple and pink lupines beside a stream and native forest in spring",
         springTitle: "Spring",
         springText: "The thaw awakens the native forest. Days grow longer, rainbows follow the rain, and the air fills with the scent of lupines and tulips.",
         summerAlt: "Clear sky and Lake Nahuel Huapi on a summer day",
@@ -452,7 +454,8 @@
         tagline: "Two design apartments on Cerro Campanario, Bariloche.",
         cipres: "Ciprés Apartment",
         lenga: "Lenga Apartment",
-        rights: "All rights reserved."
+        rights: "All rights reserved.",
+        madeBy: "Made with ♡ by"
       },
       lightbox: {
         dialogAria: "Image viewer",
@@ -461,7 +464,8 @@
         nextAria: "Next image",
         zoomInAria: "Zoom in",
         zoomOutAria: "Zoom out",
-        zoomResetAria: "Reset zoom"
+        zoomResetAria: "Reset zoom",
+        seeMore: "See more"
       }
     }
   };
@@ -915,6 +919,17 @@
       var panel = item.closest("[data-group]");
       if (!panel) return;
       openLightbox(panel.getAttribute("data-group"), parseInt(item.getAttribute("data-index"), 10));
+    });
+  });
+
+  /* Fotos de las fichas de cada depto.: abren el lightbox en esa foto,
+     con todas las fotos del depto. para recorrer (incluida "Ver más") */
+  document.querySelectorAll("[data-apt-gallery]").forEach(function (grid) {
+    var group = grid.getAttribute("data-apt-gallery");
+    grid.querySelectorAll(".about-gallery-item").forEach(function (tile) {
+      tile.addEventListener("click", function () {
+        openLightbox(group, parseInt(tile.getAttribute("data-index"), 10));
+      });
     });
   });
 
