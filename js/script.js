@@ -33,7 +33,7 @@
       },
       apts: {
         eyebrow: "Los Departamentos",
-        title: "Tu refugio<br>en la Patagonia",
+        title: "Tu lugar<br>en la Patagonia",
         lead: "En pleno Cerro Campanario, a metros de una de las vistas más elogiadas del mundo, Altué Lodge es el alojamiento ideal para tus vacaciones en Bariloche. Rodeado por bosque nativo, y con imponentes vistas a la Laguna El Trébol y a la Cordillera, es el lugar donde el único ruido es el viento entre los árboles.",
         lead2: "Disponemos de dos departamentos con entrada independiente, conectados por escaleras. Elegí el que mejor se adapte a tu viaje, o reservá los dos para venir en grupo.",
         cta: "Ver departamento",
@@ -68,7 +68,8 @@
         cta: "Consultar por el Depto. Ciprés",
         imgAlt1: "Sala de estar del Depto. Ciprés, con sillones, balcón privado y acceso al dormitorio",
         imgAlt2: "Cocina completa del Depto. Ciprés, con mesada de mármol",
-        imgAlt3: "Dormitorio principal del Depto. Ciprés, con ventana al bosque"
+        imgAlt3: "Dormitorio principal del Depto. Ciprés, con ventana al bosque",
+        imgAlt4: "Deck del Depto. Ciprés al atardecer, con vista al bosque y a la cordillera nevada"
       },
       lenga: {
         eyebrow: "Depto. Lenga",
@@ -143,7 +144,12 @@
         alt21: "Arquitectura contemporánea con vista a la cordillera",
         alt22: "Diseño de líneas puras integrado al paisaje",
         alt23: "Luna llena sobre la cordillera nevada, con niebla en el valle",
-        alt25: "Ingreso principal"
+        alt25: "Ingreso principal",
+        alt26: "Mesa de madera con bancos de troncos en el bosque",
+        alt27: "Sendero entre el bosque con notros en flor",
+        alt28: "Sendero bajo un arco de árboles nativos",
+        alt29: "Sendero de chips de madera entre los árboles",
+        alt30: "Deck del Depto. Ciprés al atardecer, con vista al bosque y a la cordillera nevada"
       },
       location: {
         eyebrow: "Cómo llegar",
@@ -300,7 +306,8 @@
         cta: "Ask about the Ciprés Apartment",
         imgAlt1: "Living room of the Ciprés Apartment, with armchairs, a private balcony and access to the bedroom",
         imgAlt2: "Full kitchen of the Ciprés Apartment, with a marble countertop",
-        imgAlt3: "Main bedroom of the Ciprés Apartment, with a window onto the forest"
+        imgAlt3: "Main bedroom of the Ciprés Apartment, with a window onto the forest",
+        imgAlt4: "Deck of the Ciprés Apartment at sunset, with views of the forest and the snow-capped mountains"
       },
       lenga: {
         eyebrow: "Lenga Apartment",
@@ -375,7 +382,12 @@
         alt21: "Contemporary architecture with mountain range views",
         alt22: "Clean-lined design integrated into the landscape",
         alt23: "Full moon over the snow-covered mountains, with mist in the valley",
-        alt25: "Main entrance in stone and native wood"
+        alt25: "Main entrance in stone and native wood",
+        alt26: "Wooden table with log benches in the forest",
+        alt27: "Forest trail with flowering notro trees",
+        alt28: "Trail under an arch of native trees",
+        alt29: "Wood-chip trail among the trees",
+        alt30: "Ciprés apartment deck at sunset, overlooking the forest and the snow-capped mountains"
       },
       location: {
         eyebrow: "How to get there",
@@ -658,7 +670,8 @@
       { src: "img/interior-bano-secundario-ducha.jpg", es: "Baño completo", en: "Full bathroom" },
       { src: "img/interior-bano-secundario-tocador.jpg", es: "Baño completo", en: "Full bathroom" },
       { src: "img/interior-cocina-pasillo.jpg", es: "Cocina completa", en: "Full kitchen" },
-      { src: "img/interior-comedor-mesa.jpg", es: "Mesa de comedor con vista al bosque", en: "Dining table with forest views" }
+      { src: "img/interior-comedor-mesa.jpg", es: "Mesa de comedor con vista al bosque", en: "Dining table with forest views" },
+      { src: "img/cipres-deck-atardecer.jpg", es: "Deck al atardecer con vista a la cordillera", en: "Deck at sunset with mountain views" }
     ],
     lenga: [
       { src: "img/lenga-deck.jpg", es: "Deck con baranda de vidrio y vista a los cerros nevados", en: "Deck with a glass railing and views of the snow-capped mountains" },
@@ -686,7 +699,11 @@
       { src: "img/exterior-02.jpg", es: "Arquitectura contemporánea con vista a la cordillera", en: "Contemporary architecture with mountain range views" },
       { src: "img/exterior-04.jpg", es: "Diseño integrado al paisaje", en: "Design integrated into the landscape" },
       { src: "img/ext-luna.jpg", es: "Luna llena sobre la cordillera nevada", en: "Full moon over the snow-covered mountains" },
-      { src: "img/exterior-03.jpg", es: "Ingreso principal en piedra y madera nativa", en: "Main entrance in stone and native wood" }
+      { src: "img/exterior-03.jpg", es: "Ingreso principal en piedra y madera nativa", en: "Main entrance in stone and native wood" },
+      { src: "img/ext-mesa-bosque.jpg", es: "Mesa de madera en el bosque", en: "Wooden table in the forest" },
+      { src: "img/ext-sendero-notro.jpg", es: "Sendero con notros en flor", en: "Trail with flowering notro trees" },
+      { src: "img/ext-sendero-arco.jpg", es: "Sendero bajo un arco de árboles nativos", en: "Trail under an arch of native trees" },
+      { src: "img/ext-sendero-bosque.jpg", es: "Sendero entre los árboles", en: "Trail among the trees" }
     ],
     mapa: [
       { src: mapLightboxSrc, es: "Mapa del barrio con la ubicación aproximada de Altué Lodge", en: "Neighborhood map with Altué Lodge's approximate location" }
